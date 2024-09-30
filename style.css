@@ -1,0 +1,411 @@
+/* index ni nako */
+.note {
+    text-align: center;
+    padding: 40px;
+    border: 20px solid black;
+    height: 590px;
+    margin: auto;
+    width: auto;
+}
+
+.noted {
+    padding: 40px;
+    border: 20px solid black;
+    height: 600px;
+    margin: auto;
+    width: auto;
+}
+
+.about {
+    text-align: right;
+
+}
+.myaot {
+    background-color: #d9ddff;
+    border: 10px solid black;
+    width: auto;
+}
+
+.bati {
+    border: 10px solid black;
+    background-color: #d9ddff;
+    width: auto;
+    font-size: 25px;
+}
+
+.pik {
+    width: auto;
+    text-align: center;
+    margin: auto;
+    background-color: #d9ddff;
+}
+
+.peke {
+    background-color: azure;
+    text-align: center;
+    border: 20px solid black;
+    width: auto;
+    height: 460px;
+}
+
+/* bantayan na page */
+.first {
+    padding: 30px;
+    border: 20px solid black;
+    margin: auto;
+    width: auto;
+}
+
+.bantayanon {
+    text-align: center;
+}
+
+.pokpok {
+    background-color: #d9ddff;
+    border: 20px solid black;
+    height: 400px;
+    margin: auto;
+    width: auto;
+    border-top: 0px;
+}
+
+.pakpak {
+    background-color: #d9ddff;
+    border: 20px solid black;
+    height: 400px;
+    margin: auto;
+    width: auto;
+}
+
+.pikpik {
+    font-size: 35px;
+    border: 20px solid black;
+    margin: auto;
+    width: auto;
+    background-color: black;
+}
+
+/* bantayan seawall ni */
+.sunset {
+    background-color: wheat;
+    text-align: center;
+    padding: 40px;
+    border: 20px solid black;
+    margin: auto;
+    width: auto;
+    height: 1150px;
+
+}
+
+.tantet {
+    border: 20px solid black;
+    border-bottom: 0px;
+}
+
+.tontet {
+    border: 20px solid black;
+    border-top: 0px;
+}
+
+/* bantayan plaza ni */
+.shittt {
+    background-color: gray;
+    height: 870px;
+    border: 20px solid black;
+    margin: auto;
+    width: auto;
+}
+
+.ilad {
+    background-color: wheat;
+    text-align: center;
+    padding: 40px;
+    border: 20px solid black;
+    height: 900px;
+    margin: auto;
+    width: auto;
+}
+
+.kery {
+    border: 20px solid black;
+    border-bottom: 0px;
+}
+
+.kiry {
+    border: 20px solid black;
+    border-top: 0px;
+}
+
+.jokery {
+    background-color: gray;
+    border: 20px solid black;
+    height: 600px;
+    margin: auto;
+    width: auto;
+}
+
+/* bantayan church ni */
+.church {
+    background-color: wheat;
+    text-align: center;
+    border: 20px solid black;
+    padding: 30px;
+    height: 790px;
+    margin: auto;
+    width: auto;
+}
+
+.batignawong {
+    background-color: gray;
+    border: 20px solid black;
+    margin: auto;
+    width: auto;
+    height: 580px;
+}
+
+/* colina isla de bantayan ni */
+.kasugdanan {
+    background-color: wheat;
+    padding: 20px;
+    text-align: center;
+    border: 20px solid black;
+    margin: auto;
+    width: auto;
+    height: 1350px;
+}
+
+.sukonato {
+    border: 20px solid black;
+    border-bottom: 0px;
+}
+
+.pastilan {
+    border: 20px solid black;
+    border-bottom: 0px;
+    border-top: 0px;
+}
+
+.lastnato {
+    background-color: gray;
+    border: 20px solid black;
+    margin: auto;
+    width: auto;
+    height: 1050px;
+}
+
+/* madridejos ni */
+.ikaduha {
+    text-align: center;
+    padding: 40px;
+    border: 20px solid black;
+    height: 850px;
+    margin: auto;
+    width: auto;
+}
+
+.ikatulo {
+    text-align: left;
+}
+
+.piyk {
+    font-size: 25px;
+    border: 20px solid black;
+    border-bottom: 0px;
+    background-color:  #d9ddff;
+}
+
+.peyk {
+    background-color: #d9ddff;
+    border: 20px solid black;
+    height: 300px;
+    margin: auto;
+    width: auto;
+}
+
+.poyk {
+    background-color: #d9ddff;
+    border: 20px solid black;
+    height: 300px;
+    margin: auto;
+    width: auto;
+}
+
+/* kota park ni */
+.poti {
+    font-size: 25px;
+    border: 20px solid black;
+    border-bottom: 0px;
+}
+
+.pokiko {
+    border: 20px solid black;
+    border-top: 0px;
+}
+
+.putik {
+    background-color: wheat;
+    text-align: center;
+    padding: 40px;
+    border: 20px solid black;
+    height: 1800px;
+    margin: auto;
+    width: auto;
+}
+
+.putika {
+    background-color: gray;
+    padding: 40px;
+    height: 320px;
+    margin: auto;
+    width: auto;
+    border: 40px solid black;
+}
+
+.putiko {
+    background-color: gray;
+    padding: 40px;
+    height: 670px;
+    margin: auto;
+    width: auto;
+    border: 40px solid black;
+}
+
+/* maalat */
+.pait {
+    background-color: wheat;
+    padding: 40px;
+    text-align: center;
+    border: 20px solid black;
+    height: 650px;
+    margin: auto;
+    width: auto;
+}
+
+.tabang {
+    background-color: gray;
+    height: 330px;
+    border: 20px solid black;
+}
+
+.tabangi {
+    font-size: 25px;
+    border: 20px solid black;
+    border-bottom: 0px;
+}
+
+/* santa fe ni */
+.tapee {
+    text-align: center;
+    padding: 40px;
+    border: 20px solid black;
+    height: 900px;
+    margin: auto;
+    width: auto;
+}
+
+.tapeee {
+    background-color: gray;
+    border: 20px solid black;
+    height: 400px;
+    margin: auto;
+    width: auto;
+}
+
+.tapeeee {
+    background-color: gray;
+    border: 20px solid black;
+    height: 350px;
+    margin: auto;
+    width: auto;
+    text-align: left;
+}
+
+/* the ruins ni */
+.guba {
+    background-color: wheat;
+    border: 20px solid black;
+    height: 950px;
+    margin: auto;
+    width: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.guuba {
+    font-size: 30px;
+    border: 20px solid black;
+    border-bottom: 0px;
+
+}
+
+.gubaon {
+    border: 20px solid black;
+    height: 150px;
+    margin: auto;
+    width: auto;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.gubaa {
+    background-color: gray;
+    border: 20px solid black;
+    height: 550px;
+    margin: auto;
+    width: auto;
+}
+
+/* annika island resot ni */
+.nika {
+    background-color: wheat;
+    border: 20px solid black;
+    padding: 20px;
+    text-align: center;
+    height: 900px;
+    margin: auto;
+    width: auto;
+}
+
+.nnika {
+    border: 20px solid black;
+    border-bottom: 0px;
+    font-size: 25px;
+}
+
+.nikoo {
+    border: 20px solid black;
+    border-top: 0px;
+}
+
+.nikka {
+    background-color: gray;
+    border: 20px solid black;
+
+}
+
+/* kote beach resort ni */
+.koto {
+    background-color: wheat;
+    border: 20px solid black;
+    padding: 20px;
+    text-align: center;
+    height: 900px;
+    margin: auto;
+    width: auto;
+}
+
+.kato {
+    font-size: 25px;
+    border: 20px solid black;
+    border-bottom: 0px;
+}
+
+.koti {
+    border: 20px solid black;
+    border-top: 0px;
+}
+
+.kote {
+    border: 20px solid black;
+    background-color: gray;
+}
