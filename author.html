@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Author</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #141414;
+    font-family: 'Arial', sans-serif;
+    color: white; /* Default text color */
+}
+
+.header {
+    background-color: #1F1F1F;
+}
+
+.hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f0e68c; /* Light text color */
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1F1F1F;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    max-width: 600px; /* Center the content */
+}
+
+.author-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%; /* Circular image */
+    width: 150px;
+    height: 150px;
+    border: 5px solid #f0e68c; /* Light border for the profile picture */
+}
+
+h2 {
+    margin: 15px 0;
+    color: #f0e68c;
+}
+
+.location {
+    color: #CFE980; /* Lighter color for location */
+}
+
+blockquote {
+    color: #CFE980;
+    font-style: italic;
+    margin: 15px 0;
+    padding: 10px;
+    border-left: 4px solid #f0e68c; /* Highlight the quote */
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background */
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between; /* Space buttons evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 20px;
+}
+
+button {
+    color: white;
+    background-color: #333333;
+    width: 180px; /* Adjusted width */
+    height: 50px; /* Adjusted height */
+    border-radius: 5px;
+    margin: 10px; /* Add margin between buttons */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+    border: none; /* Remove border */
+}
+
+button:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+footer {
+    background-color: #3e3e3e;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Vertically center items */
+    max-width: 1200px; /* Limit width for footer */
+    margin: 0 auto; /* Center footer content */
+}
+
+.logo {
+    width: 50px; /* Resize logo */
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column; /* Stack the headings */
+    align-items: center; /* Center align the text */
+    color: #f0e68c; /* Lighter color for text */
+}
+
+.navigation {
+    display: flex;
+    gap: 15px; /* Space between links */
+}
+
+.hi {
+    color: white; 
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Add padding for better click area */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.hi:hover {
+    background-color: #555; /* Darker background on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.5em; /* Smaller font size for mobile */
+    }
+
+    .hero p {
+        font-size: 1.2em; /* Adjust paragraph size */
+    }
+}
+
+</style>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Vincent F. Hesalta</h1>
+            <p>Know me more..</p>
+            <p>I am from Bantayan Island, a beautiful place in the Philippines. I am 18 years old and enjoy spending time at the beach with my friends. <br> 
+                The island has clear blue water and white sandy beaches. I love exploring local markets and trying delicious seafood. I am proud of my home and hope to <br> 
+                share its beauty with others. </p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="author-info"> 
+            <img src="./meeeee.jpg" alt="Vincent F. Hesalta" class="profile-pic">
+            <h2>About Me</h2>
+            <p class="location">Cebu City, Philippines</p>
+            <blockquote>"I love WEBDEV."</blockquote>
+        </div>
+
+        <div class="social-buttons">
+            <button onclick="document.location='https://hesalta.github.io/html-project/'">Github</button> 
+            <button onclick="document.location='https://www.facebook.com/profile.php?id=100067807869761'">Facebook</button>
+            <button onclick="document.location='https://x.com'">Twitter</button>
+            <button onclick="document.location='https://www.discord.com'">Discord</button>
+            <button onclick="document.location='https://www.instagram.com/p/C_nqU51T8xI/?img_index=1'">Instagram</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <img src="./1.svg" alt="logo" class="logo">
+            <div class="title-container">
+                <h5>THE</h5>
+                <h5>CHESS WEBSITE</h5>
+            </div>
+            <nav class="navigation">
+                <a href="index.html" class="hi">HOME</a>
+                <a href="" class="hi">ABOUT</a>
+                <a href="author.html" class="hi">AUTHOR</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

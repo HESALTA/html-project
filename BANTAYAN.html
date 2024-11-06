@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANTAYAN ISLAND</title>
+    <link rel="shortcut icon" href="fabicon.ico" type="image/x-icon">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('./background.jpg'); /* Replace with your desired background image */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            padding-top: 120px; /* Adjusted padding to account for fixed header */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /* Container for the whole page */
+        .container {
+            width: 100%; /* Ensure it takes full width of the screen */
+            max-width: 1200px; /* Limit the width to 1200px */
+            margin: 0 auto; /* Center the container */
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Light background for readability */
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Header styling - fixed at the top */
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: #1e88e5; /* Blue background */
+            color: white;
+            border-radius: 10px;
+            position: fixed; /* Fix the header */
+            top: 0;
+            width: 100%; /* Ensure it spans the full width */
+            z-index: 1000; /* Ensure it stays on top of other content */
+            height: 120px; /* Set fixed height for the header */
+            left: 0; /* Ensure it's aligned with the left edge */
+        }
+
+        /* Header title */
+        header h1 {
+            font-size: 3em;
+            color: #ffeb3b; /* Bright yellow */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Navigation links */
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            transition: color 0.3s, transform 0.3s; /* Adding transform for hover effect */
+        }
+
+        nav a:hover {
+            color: #ffeb3b; /* Bright yellow on hover */
+            transform: scale(1.1); /* Slightly grow on hover */
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+            width: 100%;
+            max-width: 100%; /* Ensure it doesn't overflow */
+        }
+
+        /* Intro section styles */
+        .intro {
+            text-align: center;
+            margin: 20px 0;
+            position: relative; /* Ensures it doesn't get covered by the fixed header */
+            z-index: 1;
+        }
+
+        .intro-image {
+            max-width: 100%; /* Make sure the image fits within its container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s; /* Smooth scale effect */
+        }
+
+        .intro-image:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        .intro-content {
+            margin: 20px;
+        }
+
+        /* Highlights section */
+        .highlights {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .highlights h2 {
+            margin-bottom: 20px;
+            color: #1e88e5; /* Match header color */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .highlight-link {
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .highlight-card {
+            display: block;
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit color from the parent */
+        }
+
+        .highlight-link:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+        .highlight-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .highlight-content h3 {
+            font-size: 1.5em;
+            color: #1e88e5;
+            margin-bottom: 10px;
+        }
+
+        .highlight-content p {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .highlight-card:hover .highlight-content h3 {
+            color: #ffeb3b; /* Change color on hover */
+        }
+
+        .highlight-card:hover .highlight-content p {
+            color: #ffeb3b; /* Change text color on hover */
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e88e5; /* Match header color */
+            color: white;
+            border-radius: 10px;
+            margin-top: 40px;
+            transition: background-color 0.3s; /* Transition for hover effect */
+        }
+
+        footer:hover {
+            background-color: #1565c0; /* Darken footer on hover */
+        }
+
+        footer h1 {
+            font-size: 2em;
+            color: #ffeb3b; /* Bright yellow */
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        footer h1:hover {
+            color: #ffb300; /* Darker yellow on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BANTAYAN ISLAND</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="author.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="intro">
+                <div class="intro-content">
+                    <h2>Welcome to Bantayan Island!</h2>
+                    <img src="./1.jpg" alt="Bantayan" class="intro-image">
+                    <p>Bantayan Island is a beautiful and peaceful destination known for its white-sand beaches and clear blue waters. It’s an ideal place to relax and enjoy nature, whether you’re swimming, sunbathing, or simply admiring the view. One of the best experiences here is watching the stunning sunsets, when the sky turns vibrant shades of red, orange, and pink as the sun sets over the ocean. The island is also home to friendly locals who are always ready to share stories about their culture and traditions.</p><br>
+                    <p>Apart from the amazing beaches, Bantayan Island offers many other activities. You can explore charming villages, enjoy fresh local food, or go on a boat ride to nearby islands. Whether you’re seeking adventure or just a peaceful escape, Bantayan has something for everyone. With its natural beauty, warm atmosphere, and plenty of things to do, Bantayan Island is a perfect place to unwind and create lasting memories.</p>
+                </div>
+            </section>
+
+            <section class="highlights">
+                <h2>Things to Visit in Bantayan</h2>
+                <div class="highlight-link">
+                    <a href="Pantalan Sunset.html" class="highlight-card">
+                        <div class="highlight-content">
+                            <h3>Bantayan Seawall</h3>
+                            <p>Experience the beautiful sunset views and the gentle waves at the Seawall.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="highlight-link">
+                    <a href="Bantayan Plaza.html" class="highlight-card">
+                        <div class="highlight-content">
+                            <h3>Bantayan Island Plaza</h3>
+                            <p>Discover local shops and cultural events at the heart of the island.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="highlight-link">
+                    <a href="Bantayan Church.html" class="highlight-card">
+                        <div class="highlight-content">
+                            <h3>Bantayan Church</h3>
+                            <p>Visit the historical Sts. Peter and Paul Church, a symbol of Bantayan's heritage.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="highlight-link">
+                    <a href="Colina Isla De Bantayan.html" class="highlight-card">
+                        <div class="highlight-content">
+                            <h3>Colina Isla De Bantayan</h3>
+                            <p>Enjoy panoramic views of the island from this beautiful hilltop location.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

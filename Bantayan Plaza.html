@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bantayan Plaza</title>
+    <link rel="shortcut icon" href="fabicon.ico" type="image/x-icon">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #ffcc00, #ff6699); /* Same background as the Seawall page */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: #333; /* Dark background for the navbar */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffeb3b; /* Bright yellow text */
+            font-size: 1.2em;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #ff6699; /* Pink background on hover or active */
+            color: #fff; /* White text on hover or active */
+        }
+
+        /* Main container */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Header styling */
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            color: #FF5733; /* Vibrant color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        hr {
+            border: 1px solid #FF5733;
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        /* Description section */
+        .description {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .description h4 {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Additional info section */
+        .info {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .info h3 {
+            margin-bottom: 10px;
+            color: #FF5733;
+        }
+
+        /* Gallery section */
+        .gallery {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .gallery h2 {
+            margin-bottom: 20px;
+            color: #FF5733;
+            font-size: 2em;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .image-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-wrapper:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 150px; /* Fixed height for uniformity */
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-wrapper:hover img {
+            opacity: 0.7; /* Fade effect on image */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            color: #FF5733; /* Vibrant text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 1.2em;
+        }
+
+        .image-wrapper:hover .overlay {
+            opacity: 1; /* Show overlay on hover */
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border-radius: 10px;
+        }
+
+        .next-link {
+            color: #FF5733; /* Vibrant color */
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .next-link:hover {
+            color: #FFB88C; /* Light color on hover */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#description" onclick="setActive(this)">Description</a></li>
+            <li><a href="#info" onclick="setActive(this)">Local Attractions</a></li>
+            <li><a href="#gallery" onclick="setActive(this)">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1>BANTAYAN PLAZA</h1>
+            <hr>
+        </div>
+        
+        <!-- Description Section -->
+        <div id="description" class="description">
+            <h4>In Bantayan Plaza, you can unwind, relax, and enjoy the local vibe. You can grab some tasty street food and stroll through the shops, taking in the sights <br>
+                and sounds around you. It's a great place to meet friendly locals and experience the island's culture. In this lively spot, you can enjoy a snack while <br>
+                soaking up the atmosphere, making it perfect for a laid-back day.</h4>
+        </div>
+
+        <!-- Local Attractions Section -->
+        <div id="info" class="info">
+            <h3>Local Attractions</h3>
+            <ul>
+                <li>Street Food Stalls: Try local delicacies like grilled seafood and fresh fruit shakes.</li>
+                <li>Souvenir Shops: Pick up handmade crafts and local products to take home.</li>
+                <li>Cultural Events: Experience local festivals and celebrations throughout the year.</li>
+                <li>Art Installations: Discover vibrant murals and art pieces around the plaza.</li>
+            </ul>
+        </div>
+        
+        <!-- Gallery Section -->
+        <div id="gallery" class="gallery">
+            <h2>Explore the Plaza</h2>
+            <div class="image-grid">
+                <div class="image-wrapper">
+                    <img src="./z.jfif" alt="plaza">
+                    <div class="overlay">I LOVE BANTAYAN</div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="./w.jpg" alt="plaza">
+                    <div class="overlay">BEAUTIFUL CHILDREN</div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="./x.jpg" alt="plaza">
+                    <div class="overlay">Local Crafts</div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="./v.jpg" alt="plaza">
+                    <div class="overlay">Art Installations</div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="./y.JPG" alt="plaza">
+                    <div class="overlay">BEAUTIFUL PLAZA</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <a href="Bantayan Church.html" class="next-link">Next: BANTAYAN CHURCH</a>
+        </footer>
+    </div>
+
+</body>
+</html>

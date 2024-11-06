@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seawall Sunsets</title>
+    <link rel="shortcut icon" href="fabicon.ico" type="image/x-icon">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #ffcc00, #ff6699);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: #333; /* Dark background for the navbar */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffeb3b; /* Bright yellow text */
+            font-size: 1.2em;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff6699; /* Pink background on hover */
+            color: #fff; /* White text on hover */
+        }
+
+        /* Container for the whole page */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #ffeb3b; /* Bright yellow */
+        }
+
+        hr {
+            border: 1px solid #ff6699;
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        /* Description section */
+        .description {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Additional information section */
+        .info {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .info h3 {
+            margin-bottom: 10px;
+            color: #ffeb3b; /* Bright yellow */
+        }
+
+        /* Gallery section */
+        .gallery {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .gallery h2 {
+            margin-bottom: 20px;
+            color: #ffeb3b; /* Bright yellow */
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            position: relative; /* For absolute positioning of overlay */
+        }
+
+        .image-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-wrapper:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 150px; /* Fixed height for uniformity */
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-wrapper:hover img {
+            opacity: 0.7; /* Fade effect on image */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            color: #ffeb3b; /* Bright yellow text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 1.2em;
+        }
+
+        .image-wrapper:hover .overlay {
+            opacity: 1; /* Show overlay on hover */
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .next-link {
+            color: #ffeb3b; /* Bright yellow */
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .next-link:hover {
+            color: #ff6699; /* Bright pink on hover */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#description">Description</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#tips">Local Tips</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#how-to-get-there">How to Get There</a></li>
+            <li><a href="#nearby-attractions">Nearby Attractions</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>BANTAYAN SEAWALL</h1>
+            <hr>
+        </header>
+
+        <main>
+            <section id="description" class="description">
+                <h4>Bantayan Seawall, also known as the Pantalan, is famous for its stunning sunsets. As the sun begins to set, the sky changes into bright and beautiful colors, creating a picture-perfect view. The warm hues of orange, pink, and purple fill the sky, making it a popular spot for visitors and locals alike to pause and enjoy the moment.</h4><br>
+                    <h4>The seawall is a peaceful place where people come to relax and reflect. Many visitors take a leisurely walk along the water’s edge while watching the sun dip below the horizon. Whether you're looking for a quiet time alone or a chance to enjoy nature with friends and family, Bantayan Seawall offers a beautiful setting to unwind and appreciate the beauty of the island.</h4>
+            </section>
+
+            <section id="info" class="info">
+                <h3>Things to Do</h3>
+                <ul>
+                    <li>Enjoy a leisurely stroll along the seawall, taking in the picturesque views.</li>
+                    <li>Bring a picnic and relax on one of the benches as you watch the sunset.</li>
+                    <li>Engage with local fishermen and learn about their daily routines.</li>
+                    <li>Capture stunning photographs of the sunset and the vibrant colors reflecting on the water.</li>
+                    <li>Sample street food from nearby vendors, offering local delicacies and refreshments.</li>
+                </ul>
+            </section>
+
+            <section id="gallery" class="gallery">
+                <h2>Sunset Gallery</h2>
+                <div class="image-grid">
+                    <div class="image-wrapper">
+                        <img src="./10.jfif" alt="sunset">
+                        <div class="overlay">Stunning View</div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="./12.jfif" alt="sunset">
+                        <div class="overlay">Golden Hour</div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="./11.jfif" alt="sunset">
+                        <div class="overlay">Peaceful Moment</div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="./8.jfif" alt="sunset">
+                        <div class="overlay">Nature's Canvas</div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="./13.jpg" alt="sunset">
+                        <div class="overlay">Twilight Bliss</div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="./9.jfif" alt="sunset">
+                        <div class="overlay">Evening Calm</div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="./14.jpg" alt="sunset">
+                        <div class="overlay">Serene Sky</div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="./7.jfif" alt="sunset">
+                        <div class="overlay">Colorful Horizon</div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="./15.jpg" alt="sunset">
+                        <div class="overlay">A Moment to Remember</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tips" class="tips">
+                <h3>Local Tips</h3>
+                <p>For the best sunset experience, arrive early to secure a good spot along the seawall. Bring a light jacket as it can get breezy in the evening. Don’t forget your camera to capture the stunning views!</p>
+            </section>
+
+            <section id="history" class="history">
+                <h3>History</h3>
+                <p>Bantayan Seawall has a rich history, serving both as a protective structure for the coastal area and a place for locals to gather, reflect, and enjoy the natural beauty of the island.</p>
+            </section>
+
+            <section id="testimonials" class="testimonials">
+                <h3>Visitor Testimonials</h3>
+                <p>"The sunsets here are unlike anything I've ever seen!" – Maria L.</p>
+                <p>"A peaceful spot to unwind after a busy day. Highly recommend visiting." – John D.</p>
+            </section>
+
+            <section id="how-to-get-there" class="how-to-get-there">
+                <h3>How to Get There</h3>
+                <p>Bantayan Seawall is easily accessible from the Bantayan Island town center. If you're staying in the nearby area, simply take a tricycle or rent a motorbike for a short drive. The seawall is open year-round and is free to visit. If you're coming from Cebu City, you can take a bus or ferry to Bantayan Island, which is a few hours away.</p>
+            </section>
+
+            <section id="nearby-attractions" class="nearby-attractions">
+                <h3>Nearby Attractions</h3>
+                <ul>
+                    <li><strong>Bantayan Church</strong> – Visit the historic Sts. Peter and Paul Church, just a short distance away.</li>
+                    <li><strong>Paradise Beach</strong> – A pristine, less crowded beach perfect for a relaxing swim.</li>
+                    <li><strong>Ogtong Cave</strong> – Explore this hidden gem for an unforgettable adventure.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <a href="Bantayan Plaza.html" class="next-link">Next: BANTAYAN PLAZA</a>
+        </footer>
+    </div>
+</body>
+</html>

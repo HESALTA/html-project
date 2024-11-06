@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bantayan Church</title>
+    <link rel="shortcut icon" href="fabicon.ico" type="image/x-icon">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #4a148c, #8e24aa);
+            color: #f3e5f5; /* Light lavender for text */
+            line-height: 1.6;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: #333; /* Dark background for the navbar */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffeb3b; /* Bright yellow text */
+            font-size: 1.2em;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #ff6699; /* Pink background on hover or active */
+            color: #fff; /* White text on hover or active */
+        }
+
+        /* Main container */
+        .church {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        hr {
+            border: 1px solid #ffeb3b; /* Bright yellow for contrast */
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        /* Header styles */
+        h1 {
+            font-size: 3em;
+            color: #ffeb3b; /* Bright yellow */
+            margin-bottom: 20px;
+        }
+
+        /* Description styles */
+        h4 {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #e1bee7; /* Light purple */
+        }
+
+        /* Image gallery styles */
+        .batignawong {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .image-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .image-wrapper:hover img {
+            transform: scale(1.05);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #ffeb3b; /* Bright yellow */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-wrapper:hover .overlay {
+            opacity: 1;
+        }
+
+        /* Additional sections */
+        .info, .events, .history, .services, .significance {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 193, 7, 0.3); /* Light gold */
+            border-radius: 10px;
+        }
+
+        .info h3, .events h3, .history h3, .services h3, .significance h3 {
+            margin-bottom: 10px;
+            color: #ffeb3b; /* Bright yellow */
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        .next-link {
+            color: #ffeb3b; /* Bright yellow */
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        .next-link:hover {
+            color: #ffe082; /* Lighter yellow on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#description" onclick="setActive(this)">Description</a></li>
+            <li><a href="#gallery" onclick="setActive(this)">Gallery</a></li>
+            <li><a href="#history" onclick="setActive(this)">History</a></li>
+            <li><a href="#services" onclick="setActive(this)">Services</a></li>
+            <li><a href="#significance" onclick="setActive(this)">Significance</a></li>
+            <li><a href="#info" onclick="setActive(this)">Visitor Info</a></li>
+            <li><a href="#events" onclick="setActive(this)">Upcoming Events</a></li>
+        </ul>
+    </nav>
+
+    <div class="church">
+        <hr>
+        <h1>BANTAYAN CHURCH</h1>
+        <hr>
+
+        <!-- Description Section -->
+        <div id="description">
+            <h4>At Bantayan Church, you can sit quietly and enjoy the peaceful atmosphere. It is a nice place to relax and think. You can light a candle or just enjoy the quiet. This church is a calm escape from the busy world.</h4>
+        </div>
+
+        <hr>
+
+        <!-- Gallery Section -->
+        <div id="gallery" class="batignawong">
+            <div class="image-wrapper">
+                <img src="./j.jfif" alt="church interior">
+                <div class="overlay">Beautiful Interior</div>
+            </div>
+            <div class="image-wrapper">
+                <img src="./g.jfif" alt="church exterior">
+                <div class="overlay">Stunning Architecture</div>
+            </div>
+            <div class="image-wrapper">
+                <img src="./k.jfif" alt="church garden">
+                <div class="overlay">Peaceful Garden</div>
+            </div>
+            <div class="image-wrapper">
+                <img src="./l.jfif" alt="church view">
+                <div class="overlay">A Place for Reflection</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- History Section -->
+        <div id="history" class="history">
+            <h3>History of Bantayan Church</h3>
+            <p>Bantayan Church, formally known as the Sts. Peter and Paul Parish Church, was founded in the 16th century by Spanish missionaries. Over the years, it has stood as a beacon of faith, surviving numerous natural calamities and historical events, including the Spanish colonial period, World War II, and more. Its architecture reflects the fusion of Spanish and Filipino styles, making it an important part of the country's cultural heritage.</p>
+        </div>
+
+        <hr>
+
+        <!-- Services Section -->
+        <div id="services" class="services">
+            <h3>Services at Bantayan Church</h3>
+            <p>The church hosts various religious services throughout the week, including daily Masses, special services during Holy Week, and regular prayer meetings. The church is known for its serene atmosphere, perfect for personal reflection or group prayers.</p>
+            <ul>
+                <li><strong>Daily Mass:</strong> 6:00 AM and 5:00 PM</li>
+                <li><strong>Confessions:</strong> Available before or after Mass</li>
+                <li><strong>Holy Week Services:</strong> Special services during Lent, culminating in the Easter Vigil</li>
+                <li><strong>Wedding Services:</strong> Available with prior reservation</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- Significance Section -->
+        <div id="significance" class="significance">
+            <h3>Significance of Bantayan Church</h3>
+            <p>Bantayan Church is not only a place of worship but also a symbol of resilience and faith for the people of Bantayan Island. It serves as a spiritual home for the locals, offering a sense of community and support. The church is also a significant cultural landmark, often featured in local festivals and events that celebrate the island’s rich history and heritage.</p>
+        </div>
+
+        <hr>
+
+        <!-- Visitor Information -->
+        <div id="info" class="info">
+            <h3>Visitor Information</h3>
+            <ul>
+                <li><strong>Open:</strong> Every day from 6:00 AM to 6:00 PM</li>
+                <li><strong>Address:</strong> Bantayan, Cebu, Philippines</li>
+                <li><strong>Phone:</strong> +63 912 345 6789 (fake number)</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- Upcoming Events -->
+        <div id="events" class="events">
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li><strong>Sunday Mass:</strong> Every Sunday at 8:00 AM and 5:00 PM</li>
+                <li><strong>Holy Week Services:</strong> Special services from April 1-7</li>
+                <li><strong>Community Gatherings:</strong> Monthly on the first Friday of each month</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <a href="Colina Isla De Bantayan.html" class="next-link">Next: COLINA ISLA DE BANTAYAN</a>
+        </footer>
+    </div>
+
+</body>
+</html>

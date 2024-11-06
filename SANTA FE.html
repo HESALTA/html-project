@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANTA FE</title>
+    <link rel="shortcut icon" href="fabicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff7e5b, #feb47b);
+            color: #333;
+            line-height: 1.6;
+            padding-top: 60px; /* Prevents content from being hidden under the fixed nav */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header, .footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #ff5733;
+            margin: 10px 0;
+        }
+
+        hr {
+            border: 1px solid #ff5733;
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        h4, p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            text-align: justify;
+        }
+
+        img {
+            width: 100%; /* Makes the image responsive */
+            max-height: 400px; /* Set a max height for uniformity */
+            object-fit: cover; /* Ensures the aspect ratio is maintained */
+            border-radius: 10px;
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .nav {
+            position: fixed; /* Fixed position to keep it at the top */
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            text-align: center;
+            z-index: 1000; /* Ensures it's above other elements */
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff5733;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            color: #feb47b;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        }
+
+        .activities, .cuisine, .author, .about {
+            margin: 20px 0;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ol li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">HOME</a>
+        <a href="about santa fe.html">ABOUT</a>
+        <a href="author.html">CONTACT</a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>SANTA FE</h1>
+            <hr>
+            <img src="./ca.jfif" alt="Santa Fe Beach">
+            <h4>Explore Santa Fe in Bantayan Island, where beautiful beaches and vibrant culture await. Discover local restaurants, shops, and thrilling activities like snorkeling and island hopping. Dive into the ultimate island experience and enjoy everything this paradise has to offer!</h4>
+        </div>
+
+        <div class="activities">
+            <h2>Popular Activities:</h2>
+            <hr>
+            <ol>
+                <li>Snorkeling: Discover the underwater beauty of Santa Fe with vibrant marine life.</li>
+                <li>Island Hopping: Visit nearby islands and enjoy pristine beaches.</li>
+                <li>Kayaking: Explore the coastline at your own pace.</li>
+                <li>Beach Volleyball: Join a game or watch locals compete at the beach.</li>
+                <li>Sunbathing: Relax and enjoy the sun at some of the best beaches in Bantayan.</li>
+                <li>Cultural Tours: Experience local traditions, crafts, and festivals.</li>
+            </ol>
+        </div>
+
+        <div class="cuisine">
+            <h2>Local Cuisine:</h2>
+            <hr>
+            <p>Santa Fe offers a variety of delicious local dishes. Here are some must-try foods:</p>
+            <ol>
+                <li>Grilled Seafood: Freshly caught fish and prawns cooked to perfection.</li>
+                <li>Lechon: A Filipino favorite, this roasted pig is a must-try at local feasts.</li>
+                <li>Pancit: A savory noodle dish often served during celebrations.</li>
+                <li>Buko Juice: Refreshing coconut water served straight from the fruit.</li>
+                <li>Kinilaw: A Filipino-style ceviche made with fresh seafood and vinegar.</li>
+            </ol>
+        </div>
+
+        <div class="about">
+            <h2>About Santa Fe:</h2>
+            <hr>
+            <p>Santa Fe is a vibrant town located on the island of Bantayan, known for its pristine beaches, rich culture, and relaxing atmosphere. Visitors come from all around the world to experience its crystal-clear waters, stunning resorts, and a taste of local Filipino life.</p>
+            <p>Whether you're into adventurous water sports or simply wish to unwind on the beach, Santa Fe has something for everyone. From beach resorts to cozy local eateries, Santa Fe invites you to discover its hidden gems and natural beauty.</p>
+        </div>
+
+        <div class="footer">
+            <h2>Top Beaches and Places You Should Never Miss:</h2>
+            <hr>
+            <ol>
+                <li><a href="The Ruins.html"><h3>The Ruins</h3></a></li>
+                <li><a href="Annika Island Resort.html"><h3>Annika Island Resort</h3></a></li>
+                <li><a href="Kota Beach Resort.html"><h3>Kota Beach Resort</h3></a></li>
+            </ol>
+            <hr>
+            <a href="index.html"><h3>HOME</h3></a>
+        </div>
+    </div>
+</body>
+</html>

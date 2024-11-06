@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADRIDEJOS</title>
+    <link rel="shortcut icon" href="fabicon.ico" type="image/x-icon">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #4caf50, #81c784);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Navbar styles */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffeb3b;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #ff6699;
+            color: #fff;
+        }
+
+        /* Main container */
+        .ikaduha {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        /* Header styles */
+        .piyk h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ffeb3b;
+        }
+
+        hr {
+            border: 1px solid #ffeb3b;
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        /* Description styles */
+        .peyk h4 {
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: #e0f7fa;
+        }
+
+        /* Additional sections */
+        .additional-info {
+            margin-top: 20px;
+            color: #e0f7fa;
+        }
+
+        .additional-info h2 {
+            margin: 20px 0;
+            color: #ffeb3b;
+        }
+
+        /* List styles */
+        .poyk h2 {
+            color: #ffeb3b;
+            font-size: 2em;
+            margin: 20px 0;
+        }
+
+        ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        ol li {
+            margin: 10px 0;
+        }
+
+        /* Link styles */
+        a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        a:hover {
+            color: #ffe082;
+            text-decoration: underline;
+        }
+
+        /* Image styles */
+        .peyk img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#description" onclick="setActive(this)">Description</a></li>
+            <li><a href="#explore" onclick="setActive(this)">Explore Madridejos</a></li>
+            <li><a href="#sights" onclick="setActive(this)">Top Sights</a></li>
+            <li><a href="#contact" onclick="setActive(this)">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="ikaduha">
+        <div class="piyk">
+            <h1>MADRIDEJOS</h1>
+            <hr>
+        </div>
+        
+        <div id="description" class="peyk">
+            <img src="./madridejos.jfif" alt="Madridejos">
+            <h4>
+                Madridejos is a charming town on Bantayan Island in the Philippines, known for its beautiful beaches and friendly community. <br>
+                Founded in 1901, it has a rich history influenced by Spanish colonization. The town features lovely spots like Kota Park, which <br> 
+                has old ruins from the Spanish era. Most people in Madridejos work in fishing and farming. The town also hosts fun festivals <br> 
+                that celebrate local culture, music, and food, making it a great place to experience the island's beauty and traditions.
+            </h4>
+            <hr>
+        </div>
+
+        <div id="explore" class="additional-info">
+            <h2>Explore Madridejos</h2>
+            <h4>
+                Besides its stunning beaches, Madridejos is home to several interesting places to visit:
+            </h4>
+            <ul>
+                <li><strong>Kota Park:</strong> A historical park with ruins and a beautiful beach, perfect for picnics and relaxation.</li>
+                <li><strong>Tapilon Island:</strong> A nearby island known for its crystal-clear waters and snorkeling spots.</li>
+                <li><strong>Madridejos Church:</strong> A local church that showcases the town's rich history and architectural beauty.</li>
+                <li><strong>Local Markets:</strong> Experience the vibrant local markets where you can buy fresh seafood and local produce.</li>
+            </ul>
+        </div>
+
+        <div id="contact" class="additional-info">
+            <h2>Contact Information</h2>
+            <h4>
+                For more details, inquiries, or bookings, feel free to contact the Madridejos Tourist Information Center:
+            </h4>
+            <ul>
+                <li><strong>Phone:</strong> +63 912 345 6789</li>
+                <li><strong>Email:</strong> info@madridejos.ph</li>
+                <li><strong>Address:</strong> Madridejos, Bantayan Island, Cebu, Philippines</li>
+            </ul>
+        </div>
+
+        <div id="sights" class="poyk">
+            <h2>Top sights in MADRIDEJOS:</h2>
+            <hr>
+            <div class="ikatulo">
+                <ol>
+                    <li><a href="Kota Park.html">Kota Park</a></li>
+                    <li><a href="MAALAT.html">Maalat</a></li>
+                </ol>
+            </div>
+            <a href="index.html"><h1>BANTAYAN</h1></a>
+        </div>  
+
+        
+    </div>
+
+</body>
+</html>

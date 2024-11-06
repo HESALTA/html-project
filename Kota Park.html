@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kota Park</title>
+    <link rel="shortcut icon" href="fabicon.ico" type="image/x-icon">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #4caf50, #81c784);
+            color: #fff;
+            line-height: 1.6;
+            padding-top: 60px; /* Ensure content doesn't overlap the navbar */
+        }
+
+        /* Sticky Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffe082;
+        }
+
+        /* Main container */
+        .putik {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        /* Header styles */
+        .poti h1 {
+            font-size: 3em;
+            color: #ffeb3b;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: 1px solid #ffeb3b;
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        /* Description styles */
+        .pokiko h4 {
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: #e0f7fa;
+        }
+
+        /* Section titles */
+        h1 {
+            color: #ffeb3b;
+            margin-top: 30px;
+            font-size: 2.5em;
+        }
+
+        /* Image section styles */
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .image-container div {
+            position: relative;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Maintain aspect ratio */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, filter 0.3s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            filter: brightness(1.2);
+        }
+
+        /* Link styles */
+        a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin-top: 20px;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ffe082;
+        }
+
+        /* Additional information styles */
+        .info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .info h2 {
+            color: #ffeb3b;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            color: #e0f7fa;
+            margin: 10px 0;
+        }
+
+        /* Footer section */
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            text-align: center;
+            color: #fff;
+        }
+
+        footer a {
+            color: #ffeb3b;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffe082;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="author.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="putik">
+        <!-- Header Section -->
+        <div class="poti">
+            <h1>KOTA PARK</h1>
+            <hr>
+        </div>
+        
+        <!-- Description Section -->
+        <div class="pokiko">
+            <h4>
+                Kota Park in Madridejos, Bantayan Island, is a serene place by the sea. It offers lush gardens, peaceful walking paths, and scenic views of the ocean. <br>
+                The park is an ideal spot for relaxing, having a family picnic, and enjoying the local atmosphere. You’ll also find a few historical sites scattered throughout the area. <br>
+                Whether you're a nature lover or someone who enjoys quiet moments, Kota Park is the perfect escape during your trip to Bantayan Island!
+            </h4>
+            <hr>
+        </div>
+
+        <!-- Information Section -->
+        <div class="info">
+            <h2>What to Do at Kota Park</h2>
+            <p>Explore the lush gardens and enjoy the fresh sea breeze as you walk along the picturesque paths.</p>
+            <p>Perfect for families—have a delightful picnic with beautiful views of the ocean.</p>
+            <p>Photographers will love the park for its historical structures and natural beauty, perfect for capturing stunning photos.</p>
+        </div>
+
+        <!-- Morning Views Section -->
+        <h1>MORNING VIEWS</h1>
+        <div class="image-container">
+            <div>
+                <img src="./ac.jpg" alt="Morning view 1">
+                <p>Morning Glow</p>
+            </div>
+            <div>
+                <img src="./ab.jpg" alt="Morning view 2">
+                <p>Sunrise Serenity</p>
+            </div>
+            <div>
+                <img src="./ae.jpg" alt="Morning view 3">
+                <p>Peaceful Path</p>
+            </div>
+            <div>
+                <img src="./ad.jpg" alt="Morning view 4">
+                <p>Ocean View</p>
+            </div>
+        </div>
+
+        <!-- Night Views Section -->
+        <h1>NIGHT VIEWS</h1>
+        <div class="image-container">
+            <div>
+                <img src="./ag.jpg" alt="Night view 1">
+                <p>Starry Night</p>
+            </div>
+            <div>
+                <img src="./aj.jpg" alt="Night view 3">
+                <p>Evening Reflections</p>
+            </div>
+            <div>
+                <img src="./af.jpg" alt="Night view 4">
+                <p>Night Lights</p>
+            </div>
+            <div>
+                <img src="./ai.jpg" alt="Night view 5">
+                <p>Quiet Moments</p>
+            </div>
+        </div>
+
+        <!-- Navigation Link -->
+        <a href="MAALAT.html">Next: MAALAT</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Kota Park | <a href="mailto:info@madridejos.com">Contact Us</a></p>
+    </footer>
+</body>
+</html>
