@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CHESS WEBSITE</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins for body text */
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    animation: fadeInBody 2s ease-out;
+}
+
+.navbar {
+    background-color: #333;
+    color: #ffc3c3;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    flex-direction: column;
+    animation: slideIn 1s ease-out;
+    text-shadow: 4px 4px rgb(127, 30, 151);
+    background: linear-gradient(to right top, #522e2e, #000000, #fff9f9);
+
+}
+
+.navbar-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+}
+
+.navbar h1 {
+    font-family: 'Merriweather', serif; /* Merriweather for headings */
+    font-size: 48px; 
+    color: #ffc0c0;
+    margin-top: 10px;
+    text-align: center;
+    animation: fadeInTitle 1.5s ease-out;
+
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 10px;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    animation: fadeInLinks 1s ease-out;
+    text-shadow: rgb(184, 33, 184);
+}
+
+.navbar-link:hover {
+    color: #f0e68c;
+    transform: scale(1.1);
+}
+
+.navbar-link[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #555;
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+
+}
+
+.container {
+    padding: 40px;
+    background-image: url('./word.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: fadeInContainer 2s ease-out;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.content-left {
+    flex: 1;
+    max-width: 70%;
+    text-align: left;
+    color: #fff;
+    z-index: 1;
+}
+
+.content-title {
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeInText 2s ease-out;
+    text-shadow: 4px 4px blueviolet;
+}
+
+.content-description {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 600px;
+    color: #fff;
+    animation: fadeInDescription 2s ease-out;
+}
+
+.magnus-image {
+    width: 450px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    animation: bounceImage 2s infinite;
+    z-index: 1;
+}
+
+.magnus-image:hover {
+    transform: scale(1.1);
+}
+
+.tutorials-section {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    animation: fadeInSection 2s ease-out;
+}
+
+.tutorials-title {
+    font-family: 'Merriweather', serif;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInTitle 2s ease-out;
+    color: white;
+    text-shadow: 4px 4px blueviolet;
+}
+
+.tutorials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tutorial-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+    position: relative;
+    z-index: 2;
+    animation: fadeInCard 2s ease-out;
+}
+
+.tutorial-card:hover {
+    transform: translateY(-5px);
+}
+
+.tutorial-card-title {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tutorial-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.about-section {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: 40px;
+    animation: fadeInAbout 2s ease-out;
+}
+
+.about-section h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    animation: fadeInTitle 2s ease-out;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    position: relative;
+    z-index: 2; 
+}
+
+.footer-link:hover {
+    color: #f0e68c;
+}
+
+.footer-info {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInDescription {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bounceImage {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes fadeInBody {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInContainer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSection {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+</style>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="./king.jpg" alt="Chess Logo" class="navbar-logo">
+            <h1>CHESSMATE</h1>
+        </div>
+        <nav class="navbar-links">
+            <a href="log in.html" class="navbar-link" data-tooltip="log in">Log in</a>
+            <a href="index.html" class="navbar-link" data-tooltip="Go to Home">Home</a>
+            <a href="background.html" class="navbar-link" data-tooltip="Background of chess">Background</a>
+            <a href="author.html" class="navbar-link" data-tooltip="Contact Me">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="content-left">
+                <h1 class="content-title">LEARN, GROW, IMPROVE</h1>
+                <p class="content-description">
+                    Welcome to The Chess Website, a hub for chess enthusiasts of all levels. Whether you're just starting out or you're an experienced player, we have everything you need to improve your game. Our tutorials cover everything from basic moves to advanced strategies. Plus, you can compete against players worldwide and join a community of chess lovers!
+                </p>
+            </div>
+            <img src="./idol.jfif" alt="Magnus Carlsen" class="magnus-image">
+        </div>
+
+        <section id="tutorials" class="tutorials-section">
+            <h2 class="tutorials-title">Chess Tutorials</h2>
+            <div class="tutorials-grid">
+                <div class="tutorial-card">
+                    <a href="Beginner's Guide.html" class="tutorial-card-title"><h3>Beginner's Guide</h3></a>
+                    <p>Learn the basics of chess, from how the pieces move to the rules of the game. A perfect place to start for new players!</p>
+                </div>
+                <div class="tutorial-card">
+                    <a href="openings.html" class="tutorial-card-title"><h3>Openings</h3></a>
+                    <p>Discover the best chess openings and understand how to control the center early in the game.</p>
+                </div>
+                <div class="tutorial-card">
+                    <a href="Endgame Strategies.html" class="tutorial-card-title"><h3>Endgame Strategies</h3></a>
+                    <p>Master the endgame by learning key strategies to convert your advantage into a win.</p>
+                </div>
+                <div class="tutorial-card">
+                    <a href="advanced strategies.html" class="tutorial-card-title"><h3>Advanced Strategies</h3></a>
+                    <p>Advanced strategies focus on deeper, long-term plans that go beyond basic tactics.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>At The Chess Website, we believe chess is more than just a game. It's a journey of learning, growth, and fun. Join us as we dive deep into the strategies, history, and challenges of chess.</p>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <p>&copy; 2024 The Chess Website. All Rights Reserved.</p> 
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

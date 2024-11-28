@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Chess</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            transition: background-color 0.3s ease-in-out;
+            animation: fadeIn 1.5s ease-in-out;
+            background: linear-gradient(to bottom left,#094166,skyblue,  #ff9ec3, rgb(58, 31, 36));
+        }
+
+        /* Fade In Animation for Body */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Header Styling */
+        h1, h5 {
+            text-align: center;
+            margin: 20px 0;
+            color: #fff;
+            animation: slideIn 1s ease-in-out, colorChange 4s infinite alternate;
+        }
+
+        /* Slide-in animation for Headers */
+        @keyframes slideIn {
+            0% { transform: translateY(-100%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Color Change animation for the main header */
+        @keyframes colorChange {
+            0% { color: #e74c3c; }
+            50% { color: #3498db; }
+            100% { color: #2ecc71; }
+        }
+
+        h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #e74c3c; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+            margin-top: 40px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        h5 {
+            font-size: 24px;
+            font-style: italic;
+            color: #7f8c8d;
+            animation: fadeInText 2s ease-in-out;
+        }
+
+        /* Styling for Paragraphs with Fade-in */
+        p, ul {
+            font-size: 18px;
+            margin: 15px auto;
+            width: 80%;
+            text-align: justify;
+            line-height: 1.8;
+            animation: fadeInText 2s ease-in-out;
+        }
+
+        /* Fade-in animation for Paragraphs */
+        @keyframes fadeInText {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 40px;
+            animation: fadeInText 2s ease-in-out;
+        }
+
+        /* Typewriter effect for highlighted text */
+        .highlight {
+            display: inline-block;
+            font-size: 22px;
+            color: #e74c3c;
+            font-weight: bold;
+            text-transform: uppercase;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typewriter 4s steps(30) 1s forwards, fadeInText 2s ease-in-out;
+        }
+
+        @keyframes typewriter {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        img {
+            width: 80%;  
+            max-width: 700px;  
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            display: block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease-in-out, box-shadow 0.3s ease;
+            animation: zoomIn 1s ease-in-out;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Navbar Link Transition */
+        .navbar-link {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            position: relative;
+            transition: all 0.3s ease;
+            
+        }
+
+        .navbar-link:hover {
+            color: #2980b9;
+            transform: scale(1.1);
+        }
+
+        .navbar-link::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 14px;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            
+        }
+
+        .navbar-link:hover::after {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        header {
+            background: #2c3e50;
+          
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            transform: perspective(1000px) rotateX(10deg);
+            transition: all 0.3s ease;
+            background: linear-gradient(to top,#094166,skyblue,  #ff9ec3, rgb(58, 31, 36));
+        }
+
+        header:hover {
+            transform: perspective(1000px) rotateX(0deg);
+        }
+
+        header img {
+            width: 50px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        header img:hover {
+            transform: rotateY(360deg);
+        }
+
+        .intro-text {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 40px;
+            color: #34495e;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            img {
+                width: 90%;
+            }
+
+            .navbar-link {
+                font-size: 16px;
+            }
+
+            .intro-text {
+                font-size: 18px;
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 16px;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Navigation Links -->
+    <header>
+        <img src="./king.jpg" alt="Chess Logo">
+        <h1>CHESSMATE</h1>
+        <div>
+            <a href="log in.html" class="navbar-link" data-tooltip="log in">Log in</a>
+            <a href="index.html" class="navbar-link" data-tooltip="Go to Home">Home</a>
+            <a href="background.html" class="navbar-link" data-tooltip="Background of chess">Background</a>
+            <a href="#contact" class="navbar-link" data-tooltip="Contact Me">Contact</a>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="intro-text">
+        <p>Welcome to the fascinating world of Chess! Discover its history, the origins of the game, and how it evolved into what we know today.</p>
+    </section>
+
+    <img src="./1.jfif" alt="Chess Image">
+    
+    <h1>History of Chess: The Basics</h1><hr>
+
+    <p>During a short intermission on Live Chess, I decided to join in the general conversation. When I was about to start another game someone had posted, "where did chess come from?" I tend to see a lot of these random statements. Others include-</p>
+    <ul>
+        <li>How old is chess?</li>
+        <li>Who invented chess?</li>
+    </ul>
+    <p>And other various questions. (You get the point :p)</p>
+    <p>So, for all the nubsters out there, this article is for you.</p>
+
+    <h1>The History Of Chess</h1>
+    <h5>-The Basics-</h5>
+    
+    <p>Today we know that chess originated from the Gupta Empire (600CE), of India. However many people firmly believe that chess was played by the ancient Egyptians. But, the game we think of as chess and what the Egyptians used to play are completely different. Simply put, the Egyptians played something different that resembled chess. Despite this, we really don't know who first came up with the game, but it can be traced officially back to India.</p>
+
+    <p>The pieces come from the primary military elements of that time: the infantry, the elephants, the cavalry and the chariots.</p>
+    
+    <p>Global trade eventually brought the game to Europe and around 1200CE the game undertook dramatic changes to become what it is today. In Italy and Spain, such changes gave their pawns the ability to move two squares on the first move, bishops their dominance over diagonals and queens their ability to move anywhere.</p>
+
+    <p>During the 18th century, the center of the chess world switched to western Europe to areas like France. Matches were played in large coffee houses in large cities such as London and Paris. It wasn't until the 19th century that chess became widely known.</p>
+
+    <img src="history.jpeg" alt="Chess History Image">
+    <p>"Cafe de la Regence" in Paris during the 19th century.</p>
+
+    <p>The first chess tournament was held in London (1851). The winner was a German by the name of Adolf Anderssen. Adolf Anderssen was also the winner of the "Immortal Game".</p>
+
+    <!-- Footer with Copyright Notice -->
+    <footer>
+        <p>&copy; 2024 THE CHESS WEBSITE. All rights reserved.</p>
+        <p>This website uses no copyrighted content. All text and images are either original or sourced from free public domain material.</p>
+        <p>Images sourced from: <a href="https://unsplash.com/" target="_blank">Unsplash</a> and <a href="https://pixabay.com/" target="_blank">Pixabay</a></p>
+    </footer>
+
+</body>
+</html>

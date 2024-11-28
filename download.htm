@@ -1,0 +1,1242 @@
+<!doctype html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1103242142",accountID:"3931285",trustKey:"3931285",xpid:"Vw8EUFRbDRABVFJWDwEHVFwF",licenseKey:"NRJS-addcf77b519c1d220a8",applicationID:"1034800284"};;/*! For license information please see nr-loader-spa-1.269.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555:(e,t,r)=>{"use strict";r.d(t,{Vp:()=>c,fn:()=>s,x1:()=>u});var n=r(384),i=r(8122);const o={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){try{const t=c(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}function c(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function u(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.info=a[e])}},9417:(e,t,r)=>{"use strict";r.d(t,{D0:()=>h,gD:()=>p,xN:()=>g});var n=r(993);const i=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var o=r(2614),a=r(944),s=r(384),c=r(8122);const u="[data-nr-mask]",d=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},feature_flags:[],generic_events:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},harvest:{tooManyRequestsDelay:60},jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},logging:{enabled:!0,harvestTimeSeconds:10,autoStart:!0,level:n.p_.INFO},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},user_actions:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:o.wk,inactiveMs:o.BB},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){i(t)?e.mask_selector="".concat(t,",").concat(u):""===t||null===t?e.mask_selector=u:(0,a.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){i(t)?e.block_selector+=",".concat(t):""!==t&&(0,a.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,a.R)(7,t)}},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},ssl:void 0}},l={},f="All configuration objects require an agent identifier!";function h(e){if(!e)throw new Error(f);if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function g(e,t){if(!e)throw new Error(f);l[e]=(0,c.a)(t,d());const r=(0,s.nY)(e);r&&(r.init=l[e])}function p(e,t){if(!e)throw new Error(f);var r=h(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}},5603:(e,t,r)=>{"use strict";r.d(t,{a:()=>c,o:()=>s});var n=r(384),i=r(8122);const o={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},a={};function s(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!a[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.loader_config=a[e])}},3371:(e,t,r)=>{"use strict";r.d(t,{V:()=>f,f:()=>l});var n=r(8122),i=r(384),o=r(6154),a=r(9324);let s=0;const c={buildEnv:a.F3,distMethod:a.Xs,version:a.xv,originTime:o.WN},u={customTransaction:void 0,disabled:!1,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,onerror:void 0,origin:""+o.gm.location,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,denyList:void 0,timeKeeper:void 0,obfuscator:void 0},d={};function l(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!d[e])throw new Error("Runtime for ".concat(e," was never set"));return d[e]}function f(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");d[e]={...(0,n.a)(t,u),...c},Object.hasOwnProperty.call(d[e],"harvestCount")||Object.defineProperty(d[e],"harvestCount",{get:()=>++s});const r=(0,i.nY)(e);r&&(r.runtime=d[e])}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>o,Yq:()=>a,xv:()=>n});const n="1.269.0",i="PROD",o="CDN",a="2.0.0-alpha.12"},6154:(e,t,r)=>{"use strict";r.d(t,{A4:()=>s,OF:()=>d,RI:()=>i,Vr:()=>h,WN:()=>g,bv:()=>o,gm:()=>a,lR:()=>f,m:()=>u,mw:()=>c,sb:()=>l});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,o="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s="complete"===a?.document?.readyState,c=Boolean("hidden"===a?.document?.visibilityState),u=""+a?.location,d=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),l=d&&"undefined"==typeof SharedWorker,f=(()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),h=!!a.navigator?.sendBeacon,g=Date.now()-(0,n.t)()},4777:(e,t,r)=>{"use strict";r.d(t,{J:()=>o});var n=r(944);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.R)(8);this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((([e,t])=>{Object.keys(i).includes(e)&&(this.sharedContext[e]=t)}))}catch(e){(0,n.R)(9,e)}}}},7295:(e,t,r)=>{"use strict";r.d(t,{Xv:()=>a,gX:()=>i,iW:()=>o});var n=[];function i(e){if(!e||o(e))return!1;if(0===n.length)return!0;for(var t=0;t<n.length;t++){var r=n[t];if("*"===r.hostname)return!1;if(s(r.hostname,e.hostname)&&c(r.pathname,e.pathname))return!1}return!0}function o(e){return void 0===e.hostname}function a(e){if(n=[],e&&e.length)for(var t=0;t<e.length;t++){let r=e[t];if(!r)continue;0===r.indexOf("http://")?r=r.substring(7):0===r.indexOf("https://")&&(r=r.substring(8));const i=r.indexOf("/");let o,a;i>0?(o=r.substring(0,i),a=r.substring(i)):(o=r,a="");let[s]=o.split(":");n.push({hostname:s,pathname:a})}}function s(e,t){return!(e.length>t.length)&&t.indexOf(e)===t.length-e.length}function c(e,t){return 0===e.indexOf("/")&&(e=e.substring(1)),0===t.indexOf("/")&&(t=t.substring(1)),""===e||e===t}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>c,Ze:()=>l,x3:()=>u});var n=r(7836),i=r(3606),o=r(860),a=r(2646);const s={};function c(e,t){const r={staged:!1,priority:o.P[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){e&&s[e]&&(s[e].get(t)&&s[e].delete(t),h(e,t,!1),s[e].size&&f(e))}function d(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(e="",t="feature",r=!1){if(d(e),!e||!s[e].get(t)||r)return h(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=Array.from(s[e]);t.every((([e,t])=>t.staged))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((([t])=>{s[e].delete(t),h(e,t)})))}function h(e,t,r=!0){const o=e?n.ee.get(e):n.ee,s=i.i.handlers;if(!o.aborted&&o.backlog&&s){if(r){const e=o.backlog[t],r=s[t];if(r){for(let t=0;e&&t<e.length;++t)g(e[t],r);Object.entries(r).forEach((([e,t])=>{Object.values(t||{}).forEach((t=>{t[0]?.on&&t[0]?.context()instanceof a.y&&t[0].on(e,t[1])}))}))}}o.isolatedBacklog||delete s[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function g(e,t){var r=e[1];Object.values(t[r]||{}).forEach((t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],o=e[2];n.apply(i,o)}}))}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>c,ee:()=>u});var n=r(384),i=r(8990),o=r(3371),a=r(2646),s=r(5607);const c="nr@context:".concat(s.W),u=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&(0,o.f)(r).isolatedBacklog}catch(e){}var f={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=h(n),c=p(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var g=v()[s[e]];g&&g.push([f,e,r,a]);return a},get:m,listeners:p,context:h,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((([e,n])=>{s[n]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function h(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,c,(()=>new a.y(c))):new a.y(c)}function g(e,t){n[e]=p(e).concat(t)}function p(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=u)},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>o});var n=r(9908);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.d,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.d);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function o(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>o,jT:()=>n,sp:()=>i})},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,ZF:()=>c,bz:()=>a,el:()=>u});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>a,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>o});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},7485:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(6154);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n.gm?.location?.protocol&&t.host===n.gm?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},944:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.debug&&console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t)}r.d(t,{R:()=>n})},5284:(e,t,r)=>{"use strict";r.d(t,{t:()=>c,B:()=>s});var n=r(7836),i=r(6154);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(e={}){try{i.gm.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout((()=>{i=clearTimeout(i)}),t)),n||(clearTimeout(i),i=setTimeout((()=>{e.apply(this,r)}),t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},3304:(e,t,r)=>{"use strict";r.d(t,{A:()=>o});var n=r(7836);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())??""}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}return""}}},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,sB:()=>a});var n=r(3878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.sp)("load",e,t)}function a(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>d,Zm:()=>a,bQ:()=>c,dV:()=>s,nY:()=>u,pV:()=>l});var n=r(6154),i=r(1863);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function s(){let e=a();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},2843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},8139:(e,t,r)=>{"use strict";r.d(t,{u:()=>f});var n=r(7836),i=r(3434),o=r(8990),a=r(6154);const s={},c=a.gm.XMLHttpRequest,u="addEventListener",d="removeEventListener",l="nr@wrapped:".concat(n.P);function f(e){var t=function(e){return(e||n.ee).get("events")}(e);if(s[t.debugId]++)return t;s[t.debugId]=1;var r=(0,i.YM)(t,!0);function f(e){r.inPlace(e,[u,d],"-",g)}function g(e,t){return e[1]}return"getPrototypeOf"in Object&&(a.RI&&h(document,f),h(a.gm,f),h(c.prototype,f)),t.on(u+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,o.I)(n,l,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(d+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function h(e,t,...r){let n=e;for(;"object"==typeof n&&!Object.prototype.hasOwnProperty.call(n,u);)n=Object.getPrototypeOf(n);n&&t(n,...r)}},3434:(e,t,r)=>{"use strict";r.d(t,{Jt:()=>o,YM:()=>c});var n=r(7836),i=r(5607);const o="nr@original:".concat(i.W);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}},9300:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K.ajax},3333:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,Zp:()=>i,mq:()=>s,nf:()=>a,qN:()=>o});const n=r(860).K.genericEvents,i=["auxclick","click","copy","keydown","paste","scrollend"],o=["focus","blur"],a=4,s=1e3},6774:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K.jserrors},993:(e,t,r)=>{"use strict";r.d(t,{ET:()=>o,TZ:()=>a,p_:()=>i});var n=r(860);const i={ERROR:"ERROR",WARN:"WARN",INFO:"INFO",DEBUG:"DEBUG",TRACE:"TRACE"},o="log",a=n.K.logging},3785:(e,t,r)=>{"use strict";r.d(t,{R:()=>c,b:()=>u});var n=r(9908),i=r(1863),o=r(860),a=r(3969),s=r(993);function c(e,t,r={},c=s.p_.INFO){(0,n.p)(a.xV,["API/logging/".concat(c.toLowerCase(),"/called")],void 0,o.K.metrics,e),(0,n.p)(s.ET,[(0,i.t)(),t,r,c],void 0,o.K.logging,e)}function u(e){return"string"==typeof e&&Object.values(s.p_).some((t=>t===e.toUpperCase().trim()))}},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>s,rs:()=>i,xV:()=>a,z_:()=>o});const n=r(860).K.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K.pageViewTiming},6344:(e,t,r)=>{"use strict";r.d(t,{BB:()=>d,G4:()=>o,Qb:()=>l,TZ:()=>i,Ug:()=>a,_s:()=>s,bc:()=>u,yP:()=>c});var n=r(2614);const i=r(860).K.sessionReplay,o={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"},a=.12,s={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},c={[n.g.ERROR]:15e3,[n.g.FULL]:3e5,[n.g.OFF]:0},u={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},d=5e3,l={API:"api"}},5270:(e,t,r)=>{"use strict";r.d(t,{Aw:()=>c,CT:()=>u,SR:()=>s});var n=r(384),i=r(9417),o=r(7767),a=r(6154);function s(e){return!!(0,n.dV)().o.MO&&(0,o.V)(e)&&!0===(0,i.gD)(e,"session_trace.enabled")}function c(e){return!0===(0,i.gD)(e,"session_replay.preload")&&s(e)}function u(e,t){const r=t.correctAbsoluteTimestamp(e);return{originalTimestamp:e,correctedTimestamp:r,timestampDiff:e-r,originTime:a.WN,correctedOriginTime:t.correctedOriginTime,originTimeDiff:Math.floor(a.WN-t.correctedOriginTime)}}},3738:(e,t,r)=>{"use strict";r.d(t,{He:()=>i,Kp:()=>s,Lc:()=>u,Rz:()=>d,TZ:()=>n,bD:()=>o,d3:()=>a,jx:()=>l,uP:()=>c});const n=r(860).K.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState",l=1e3},3962:(e,t,r)=>{"use strict";r.d(t,{AM:()=>o,O2:()=>s,Qu:()=>c,TZ:()=>a,ih:()=>u,tC:()=>i});var n=r(860);const i=["click","keydown","submit"],o="api",a=n.K.softNav,s={INITIAL_PAGE_LOAD:"",ROUTE_CHANGE:1,UNSPECIFIED:2},c={INTERACTION:1,AJAX:2,CUSTOM_END:3,CUSTOM_TRACER:4},u={IP:"in progress",FIN:"finished",CAN:"cancelled"}},7378:(e,t,r)=>{"use strict";r.d(t,{$p:()=>R,BR:()=>b,Kp:()=>x,L3:()=>y,Lc:()=>c,NC:()=>o,SG:()=>d,TZ:()=>i,U6:()=>g,UT:()=>m,d3:()=>w,dT:()=>f,e5:()=>A,gx:()=>v,l9:()=>l,oW:()=>h,op:()=>p,rw:()=>u,tH:()=>E,uP:()=>s,wW:()=>T,xq:()=>a});var n=r(384);const i=r(860).K.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",g="jsonpNode",p="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=(0,n.dV)().o.ST,w="-start",x="-end",R="-body",T="cb"+x,A="jsTime",E="fetch"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(7836);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7767:(e,t,r)=>{"use strict";r.d(t,{V:()=>o});var n=r(9417),i=r(6154);const o=e=>i.RI&&!0===(0,n.gD)(e,"privacy.cookies_enabled")},425:(e,t,r)=>{"use strict";r.d(t,{j:()=>j});var n=r(860),i=r(2555),o=r(3371),a=r(9908),s=r(7836),c=r(1687),u=r(5289),d=r(6154),l=r(944),f=r(3969),h=r(384),g=r(6344);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start",g.G4.RECORD,g.G4.PAUSE,"log","wrapLogger"],m=["setErrorHandler","finished","addToTrace","addRelease"];var v=r(1863),b=r(2614),y=r(993),w=r(3785),x=r(2646),R=r(3434);function T(e,t,r,n){if("object"!=typeof t||!t||"string"!=typeof r||!r||"function"!=typeof t[r])return(0,l.R)(29);const i=function(e){return(e||s.ee).get("logger")}(e),o=(0,R.YM)(i),a=new x.y(s.P);return a.level=n.level,a.customAttributes=n.customAttributes,o.inPlace(t,[r],"wrap-logger-",a),i}function A(){const e=(0,h.pV)();p.forEach((t=>{e[t]=(...r)=>function(t,...r){let n=[];return Object.values(e.initializedAgents).forEach((e=>{e&&e.api?e.exposed&&e.api[t]&&n.push(e.api[t](...r)):(0,l.R)(38,t)})),n.length>1?n:n[0]}(t,...r)}))}const E={};var S=r(9417),N=r(5603),O=r(5284);const I=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let _=!1;function j(e,t={},p,x){let{init:R,info:j,loader_config:P,runtime:C={},exposed:k=!0}=t;C.loaderType=p;const L=(0,h.pV)();j||(R=L.init,j=L.info,P=L.loader_config),(0,S.xN)(e.agentIdentifier,R||{}),(0,N.a)(e.agentIdentifier,P||{}),j.jsAttributes??={},d.bv&&(j.jsAttributes.isWorker=!0),(0,i.x1)(e.agentIdentifier,j);const D=(0,S.D0)(e.agentIdentifier),H=[j.beacon,j.errorBeacon];_||(D.proxy.assets&&(I(D.proxy.assets),H.push(D.proxy.assets)),D.proxy.beacon&&H.push(D.proxy.beacon),A(),(0,h.US)("activatedFeatures",O.B),e.runSoftNavOverSpa&&=!0===D.soft_navigations.enabled&&D.feature_flags.includes("soft_nav")),C.denyList=[...D.ajax.deny_list||[],...D.ajax.block_internal?H:[]],C.ptid=e.agentIdentifier,(0,o.V)(e.agentIdentifier,C),e.ee=s.ee.get(e.agentIdentifier),void 0===e.api&&(e.api=function(e,t,h=!1){t||(0,c.Ak)(e,"api");const p={};var x=s.ee.get(e),R=x.get("tracer");E[e]=b.g.OFF,x.on(g.G4.REPLAY_RUNNING,(t=>{E[e]=t}));var A="api-",S=A+"ixn-";function N(t,r,n,o){const a=(0,i.Vp)(e);return null===r?delete a.jsAttributes[t]:(0,i.x1)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),_(A,n,!0,o||null===r?"session":void 0)(t,r)}function O(){}p.log=function(e,{customAttributes:t={},level:r=y.p_.INFO}={}){(0,a.p)(f.xV,["API/log/called"],void 0,n.K.metrics,x),(0,w.R)(x,e,t,r)},p.wrapLogger=(e,t,{customAttributes:r={},level:i=y.p_.INFO}={})=>{(0,a.p)(f.xV,["API/wrapLogger/called"],void 0,n.K.metrics,x),T(x,e,t,{customAttributes:r,level:i})},m.forEach((e=>{p[e]=_(A,e,!0,"api")})),p.addPageAction=_(A,"addPageAction",!0,n.K.genericEvents),p.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,o.f)(e).customTransaction=(r||"http://custom.transaction")+t,_(A,"setPageViewName",!0)()},p.setCustomAttribute=function(e,t,r=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return N(e,t,"setCustomAttribute",r);(0,l.R)(40,typeof t)}else(0,l.R)(39,typeof e)},p.setUserId=function(e){if("string"==typeof e||null===e)return N("enduser.id",e,"setUserId",!0);(0,l.R)(41,typeof e)},p.setApplicationVersion=function(e){if("string"==typeof e||null===e)return N("application.version",e,"setApplicationVersion",!1);(0,l.R)(42,typeof e)},p.start=()=>{try{(0,a.p)(f.xV,["API/start/called"],void 0,n.K.metrics,x),x.emit("manual-start-all")}catch(e){(0,l.R)(23,e)}},p[g.G4.RECORD]=function(){(0,a.p)(f.xV,["API/recordReplay/called"],void 0,n.K.metrics,x),(0,a.p)(g.G4.RECORD,[],void 0,n.K.sessionReplay,x)},p[g.G4.PAUSE]=function(){(0,a.p)(f.xV,["API/pauseReplay/called"],void 0,n.K.metrics,x),(0,a.p)(g.G4.PAUSE,[],void 0,n.K.sessionReplay,x)},p.interaction=function(e){return(new O).get("object"==typeof e?e:{})};const I=O.prototype={createTracer:function(e,t){var r={},i=this,o="function"==typeof t;return(0,a.p)(f.xV,["API/createTracer/called"],void 0,n.K.metrics,x),h||(0,a.p)(S+"tracer",[(0,v.t)(),e,r],i,n.K.spa,x),function(){if(R.emit((o?"":"no-")+"fn-start",[(0,v.t)(),i,o],r),o)try{return t.apply(this,arguments)}catch(e){const t="string"==typeof e?new Error(e):e;throw R.emit("fn-err",[arguments,this,t],r),t}finally{R.emit("fn-end",[(0,v.t)()],r)}}}};function _(e,t,r,i){return function(){return(0,a.p)(f.xV,["API/"+t+"/called"],void 0,n.K.metrics,x),i&&(0,a.p)(e+t,[(0,v.t)(),...arguments],r?null:this,i,x),r?void 0:this}}function j(){r.e(478).then(r.bind(r,8778)).then((({setAPI:t})=>{t(e),(0,c.Ze)(e,"api")})).catch((e=>{(0,l.R)(27,e),x.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{I[e]=_(S,e,void 0,h?n.K.softNav:n.K.spa)})),p.setCurrentRouteName=h?_(S,"routeName",void 0,n.K.softNav):_(A,"routeName",!0,n.K.spa),p.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,a.p)(f.xV,["API/noticeError/called"],void 0,n.K.metrics,x),(0,a.p)("err",[t,(0,v.t)(),!1,r,!!E[e]],void 0,n.K.jserrors,x)},d.RI?(0,u.GG)((()=>j()),!0):j(),p}(e.agentIdentifier,x,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=k),_=!0}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{K:()=>n,P:()=>i});const n={ajax:"ajax",genericEvents:"generic_events",jserrors:"jserrors",logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.spa]:5,[n.ajax]:6,[n.sessionTrace]:7,[n.softNav]:8,[n.sessionReplay]:9,[n.logging]:10,[n.genericEvents]:11}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({212:"nr-spa-compressor",249:"nr-spa-recorder",478:"nr-spa"}[e]+"-1.269.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.269.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={478:"sha512-BDnQSqs6w93jZNuA2+ydjStO6iZUcCDM2G5ACNl42PnZebXqSDjfzp21rEmyIS/uS1Mm/KhHBftMozfaupNTFQ==",249:"sha512-+3RM3jpjuKfYqtWclSvdJHGFcW1Zs3W91YF6LLj05mh2KF2Dd4d/UbOS+Gj8JJIB3+OhK9x9MEoWBx6J1Qp+Hw==",212:"sha512-2D6xSed7GvSJDbO/jQCNsTNZTswnT4nkZPDOuerj6rroMh2F2IQsO5rZkHWXh31IDaiIxoiUn44tUfBomWqChw=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},g=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={38:0,788:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.269.0.PROD"]=self["webpackChunk:NRBA-1.269.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(944),t=i(6344),r=i(9566);class n{agentIdentifier;constructor(e=(0,r.LA)(16)){this.agentIdentifier=e}#e(t,...r){if("function"==typeof this.api?.[t])return this.api[t](...r);(0,e.R)(35,t)}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e(t.G4.RECORD)}pauseReplay(){return this.#e(t.G4.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}log(e,t){return this.#e("log",e,t)}wrapLogger(e,t,r){return this.#e("wrapLogger",e,t,r)}}var o=i(860),a=i(9417);const s=Object.values(o.K);function c(e){const t={};return s.forEach((r=>{t[r]=function(e,t){return!0===(0,a.gD)(t,"".concat(e,".enabled"))}(r,e)})),t}var u=i(425);var d=i(1687),l=i(4234),f=i(5289),h=i(6154),g=i(5270),p=i(7767),m=i(6389);class v extends l.W{constructor(e,t,r,n=!0){super(e,t,r),this.auto=n,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,a.gD)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto?(0,d.Ak)(e,r):this.ee.on("manual-start-all",(0,m.J)((()=>{(0,d.Ak)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()})))}importAggregator(t={}){if(this.featAggregate||!this.auto)return;let r;this.onAggregateImported=new Promise((e=>{r=e}));const n=async()=>{let n;try{if((0,p.V)(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(478).then(i.bind(i,6526));n=e(this.agentIdentifier)}}catch(t){(0,e.R)(20,t),this.ee.emit("internal-error",[t]),this.featureName===o.K.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,n))return(0,d.Ze)(this.agentIdentifier,this.featureName),void r(!1);const{lazyFeatureLoader:e}=await i.e(478).then(i.bind(i,6103)),{Aggregate:o}=await e(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,t),r(!0)}catch(t){(0,e.R)(34,t),this.abortHandler?.(),(0,d.Ze)(this.agentIdentifier,this.featureName,!0),r(!1),this.ee&&this.ee.abort()}};h.RI?(0,f.GG)((()=>n()),!0):n()}#t(e,t){switch(e){case o.K.sessionReplay:return(0,g.SR)(this.agentIdentifier)&&!!t;case o.K.sessionTrace:return!!t;default:return!0}}}var b=i(6630);class y extends v{static featureName=b.T;constructor(e,t,r=!0){super(e,t,b.T,r),this.importAggregator()}}var w=i(4777);class x extends w.J{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,Object.entries(e||{}).forEach((([e,r])=>{t[e]=R(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,Object.keys(r||{}).forEach((e=>{if("count"!==e){var t=a[e],n=r[e];n&&!n.c?a[e]=R(n.t,t):a[e]=function(e,t){if(!t)return e;t.c||(t=T(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(n,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=R(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=Object.values(this.aggregatedData[r]||{}),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function R(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=T(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function T(e){return{t:e,min:e,max:e,sos:e*e,c:1}}var A=i(384);var E=i(9908),S=i(2843),N=i(3878),O=i(782),I=i(1863);class _ extends v{static featureName=O.T;constructor(e,t,r=!0){super(e,t,O.T,r),h.RI&&((0,S.u)((()=>(0,E.p)("docHidden",[(0,I.t)()],void 0,O.T,this.ee)),!0),(0,N.sp)("pagehide",(()=>(0,E.p)("winPagehide",[(0,I.t)()],void 0,O.T,this.ee))),this.importAggregator())}}var j=i(3969);class P extends v{static featureName=j.TZ;constructor(e,t,r=!0){super(e,t,j.TZ,r),this.importAggregator()}}var C=i(6774),k=i(3304);class L{constructor(e,t,r,n,i){this.name="UncaughtError",this.message="string"==typeof e?e:(0,k.A)(e),this.sourceURL=t,this.line=r,this.column=n,this.__newrelic=i}}function D(e){return K(e)?e:new L(void 0!==e?.message?e.message:e,e?.filename||e?.sourceURL,e?.lineno||e?.line,e?.colno||e?.col,e?.__newrelic)}function H(e){let t="Unhandled Promise Rejection";if(K(e?.reason))try{return e.reason.message=t+": "+e.reason.message,D(e.reason)}catch(t){return D(e.reason)}if(void 0===e.reason)return D(t);const r=D(e.reason);return r.message=t+": "+r?.message,r}function M(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new L(e.message,e.filename,e.lineno,e.colno,e.error.__newrelic);return t.name=SyntaxError.name,t}return K(e.error)?e.error:D(e)}function K(e){return e instanceof Error&&!!e.stack}class U extends v{static featureName=C.T;#r=!1;constructor(e,r,n=!0){super(e,r,C.T,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("internal-error",(e=>{this.abortHandler&&(0,E.p)("ierr",[D(e),(0,I.t)(),!0,{},this.#r],void 0,this.featureName,this.ee)})),this.ee.on(t.G4.REPLAY_RUNNING,(e=>{this.#r=e})),h.gm.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,E.p)("err",[H(e),(0,I.t)(),!1,{unhandledPromiseRejection:1},this.#r],void 0,this.featureName,this.ee)}),(0,N.jT)(!1,this.removeOnAbort?.signal)),h.gm.addEventListener("error",(e=>{this.abortHandler&&(0,E.p)("err",[M(e),(0,I.t)(),!1,{},this.#r],void 0,this.featureName,this.ee)}),(0,N.jT)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#n,this.importAggregator()}#n(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}var V=i(5603),G=i(8990);let B=1;const F="nr@id";function W(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===h.gm?0:(0,G.I)(e,F,(function(){return B++}))}function z(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,k.A)(e).length}catch(e){return}}}var q=i(8139),Z=i(7836),Y=i(3434);const X={},J=["open","send"];function Q(t){var r=t||Z.ee;const n=function(e){return(e||Z.ee).get("xhr")}(r);if(X[n.debugId]++)return n;X[n.debugId]=1,(0,q.u)(r);var i=(0,Y.YM)(n),o=h.gm.XMLHttpRequest,a=h.gm.MutationObserver,s=h.gm.Promise,c=h.gm.setInterval,u="readystatechange",d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],l=[],f=h.gm.XMLHttpRequest=function(t){const r=new o(t),a=n.context(r);try{n.emit("new-xhr",[r],a),r.addEventListener(u,(s=a,function(){var e=this;e.readyState>3&&!s.resolved&&(s.resolved=!0,n.emit("xhr-resolved",[],e)),i.inPlace(e,d,"fn-",y)}),(0,N.jT)(!1))}catch(t){(0,e.R)(15,t);try{n.emit("internal-error",[t])}catch(e){}}var s;return r};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",y)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,f),f.prototype=o.prototype,i.inPlace(f.prototype,J,"-xhr-",y),n.on("send-xhr-start",(function(e,t){g(e,t),function(e){l.push(e),a&&(p?p.then(b):c?c(b):(m=-m,v.data=m))}(t)})),n.on("open-xhr-start",g),a){var p=s&&s.resolve();if(!c&&!s){var m=1,v=document.createTextNode(m);new a(b).observe(v,{characterData:!0})}}else r.on("fn-end",(function(e){e[0]&&e[0].type===u||b()}));function b(){for(var e=0;e<l.length;e++)g(0,l[e]);l.length&&(l=[])}function y(e,t){return t}return n}var ee="fetch-",te=ee+"body-",re=["arrayBuffer","blob","json","text","formData"],ne=h.gm.Request,ie=h.gm.Response,oe="prototype";const ae={};function se(e){const t=function(e){return(e||Z.ee).get("fetch")}(e);if(!(ne&&ie&&h.gm.fetch))return t;if(ae[t.debugId]++)return t;function r(e,r,n){var i=e[r];"function"==typeof i&&(e[r]=function(){var e,r=[...arguments],o={};t.emit(n+"before-start",[r],o),o[Z.P]&&o[Z.P].dt&&(e=o[Z.P].dt);var a=i.apply(this,r);return t.emit(n+"start",[r,e],a),a.then((function(e){return t.emit(n+"end",[null,e],a),e}),(function(e){throw t.emit(n+"end",[e],a),e}))})}return ae[t.debugId]=1,re.forEach((e=>{r(ne[oe],e,te),r(ie[oe],e,te)})),r(h.gm,"fetch",ee),t.on(ee+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(ee+"done",[null,r],n)}else t.emit(ee+"done",[e],n)})),t}var ce=i(7485);class ue{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,V.o)(this.agentIdentifier);if(!t)return null;var n=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!n||!i)return null;var a=(0,r.ZF)(),s=(0,r.el)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,n,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,n,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof h.gm?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,k.A)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,a.gD)(this.agentIdentifier,"distributed_tracing")&&(r=(0,a.D0)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var n=0;n<r.allowed_origins.length;n++){var i=(0,ce.D)(r.allowed_origins[n]);if(e.hostname===i.hostname&&e.protocol===i.protocol&&e.port===i.port){t=!0;break}}return t}isDtEnabled(){var e=(0,a.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,a.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,a.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,a.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var de=i(9300),le=i(7295),fe=["load","error","abort","timeout"],he=fe.length,ge=(0,A.dV)().o.REQ,pe=(0,A.dV)().o.XHR;class me extends v{static featureName=de.T;constructor(e,t,r=!0){super(e,t,de.T,r),this.dt=new ue(e),this.handler=(e,t,r,n)=>(0,E.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};h.gm?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const r={status:t.responseStatus},n={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};ve(r,t.name),this.handler("xhr",[r,n,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,o.K.ajax)}}))}catch(e){}se(this.ee),Q(this.ee),function(e,t,r,n){function i(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){R(t,e)}),(0,N.jT)(!1)),h.lR||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,N.jT)(!1))}function a(e){this.params={method:e[0]},ve(this,e[1]),this.metrics={}}function s(t,r){var i=(0,V.o)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var o=n.generateTracePayload(this.parsedOrigin);if(o){var a=!1;o.newrelicHeader&&(r.setRequestHeader("newrelic",o.newrelicHeader),a=!0),o.traceContextParentHeader&&(r.setRequestHeader("traceparent",o.traceContextParentHeader),o.traceContextStateHeader&&r.setRequestHeader("tracestate",o.traceContextStateHeader),a=!0),a&&(this.dt=o)}}function c(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=z(i);a&&(n.txSize=a)}this.startTime=(0,I.t)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<he;s++)r.addEventListener(fe[s],this.listener,(0,N.jT)(!1))}function u(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function d(e,t){var r=""+W(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function l(e,t){var r=""+W(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function f(){this.endTime=(0,I.t)()}function g(e,r){r instanceof pe&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function p(e,r){r instanceof pe&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function m(e,t,r){t instanceof pe&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,I.t)()))}function v(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,I.t)()-this.xhrCbStart,this.onload,r],r)}function b(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&h.RI&&(t=""+h.gm.location.href):e[0]&&e[0].url?t=e[0].url:h.gm?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,ce.D)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=n.generateTracePayload(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,i)&&(this.dt=i);else{var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),s(o.headers,i)&&(this.dt=i),e.length>1?e[1]=o:e.push(o)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function y(e,t){this.params={},this.metrics={},this.startTime=(0,I.t)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof ge?r=i.url:h.gm?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),ve(this,r);var o=(""+(i&&i instanceof ge&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=z(n.body)||0}function w(e,t){if(this.endTime=(0,I.t)(),this.params||(this.params={}),(0,le.iW)(this.params))return;let n;this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);const i={txSize:this.txSize,rxSize:n,duration:(0,I.t)()-this.startTime};r("xhr",[this.params,i,this.startTime,this.endTime,"fetch"],this,o.K.ajax)}function x(e){const t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(let t=0;t<he;t++)e.removeEventListener(fe[t],this.listener,!1);t.aborted||(0,le.iW)(t)||(n.duration=(0,I.t)()-this.startTime,this.loadCazptureCalled||4!==e.readyState?null==t.status&&(t.status=0):R(this,e),n.cbTime=this.cbTime,r("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,o.K.ajax))}}function R(e,r){e.params.status=r.status;var n=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?z(e.response):"text"===r||""===r||void 0===r?z(e.responseText):void 0}(r,e.lastSize);if(n&&(e.metrics.rxSize=n),e.sameOrigin){var i=r.getResponseHeader("X-NewRelic-App-Data");i&&((0,E.p)(j.rs,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,o.K.metrics,t),e.params.cat=i.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",i),t.on("open-xhr-start",a),t.on("open-xhr-end",s),t.on("send-xhr-start",c),t.on("xhr-cb-time",u),t.on("xhr-load-added",d),t.on("xhr-load-removed",l),t.on("xhr-resolved",f),t.on("addEventListener-end",g),t.on("removeEventListener-end",p),t.on("fn-end",v),t.on("fetch-before-start",b),t.on("fetch-start",y),t.on("fn-start",m),t.on("fetch-done",w)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}function ve(e,t){var r=(0,ce.D)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}const be={},ye=["pushState","replaceState"];function we(e){const t=function(e){return(e||Z.ee).get("history")}(e);return!h.RI||be[t.debugId]++||(be[t.debugId]=1,(0,Y.YM)(t).inPlace(window.history,ye,"-")),t}var xe=i(3738);const{He:Re,bD:Te,d3:Ae,Kp:Ee,TZ:Se,Lc:Ne,uP:Oe,Rz:Ie}=xe;class _e extends v{static featureName=Se;constructor(e,t,r=!0){super(e,t,Se,r);if(!(0,p.V)(this.agentIdentifier))return void(0,d.x3)(this.agentIdentifier,this.featureName);const n=this.ee;let i;we(n),this.eventsEE=(0,q.u)(n),this.eventsEE.on(Oe,(function(e,t){this.bstStart=(0,I.t)()})),this.eventsEE.on(Ne,(function(e,t){(0,E.p)("bst",[e[0],t,this.bstStart,(0,I.t)()],void 0,o.K.sessionTrace,n)})),n.on(Ie+Ae,(function(e){this.time=(0,I.t)(),this.startPath=location.pathname+location.hash})),n.on(Ie+Ee,(function(e){(0,E.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,o.K.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,E.p)(Re,[t],void 0,o.K.sessionTrace,n)})),i.observe({type:Te,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}}var je=i(2614);class Pe extends v{static featureName=t.TZ;#i;constructor(e,r,n=!0){let i;super(e,r,t.TZ,n),this.replayRunning=!1;try{i=JSON.parse(localStorage.getItem("".concat(je.H3,"_").concat(je.uh)))}catch(e){}(0,g.SR)(e)&&this.ee.on(t.G4.RECORD,(()=>this.#o())),this.#a(i)?(this.#i=i?.sessionReplayMode,this.#s()):this.importAggregator(),this.ee.on("err",(e=>{this.replayRunning&&(this.errorNoticed=!0,(0,E.p)(t.G4.ERROR_DURING_REPLAY,[e],void 0,this.featureName,this.ee))})),this.ee.on(t.G4.REPLAY_RUNNING,(e=>{this.replayRunning=e}))}#a(e){return e&&(e.sessionReplayMode===je.g.FULL||e.sessionReplayMode===je.g.ERROR)||(0,g.Aw)(this.agentIdentifier)}#c=!1;async#s(e){if(!this.#c){this.#c=!0;try{const{Recorder:t}=await Promise.all([i.e(478),i.e(249)]).then(i.bind(i,2496));this.recorder??=new t({mode:this.#i,agentIdentifier:this.agentIdentifier,trigger:e,ee:this.ee}),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording}catch(e){}this.importAggregator({recorder:this.recorder,errorNoticed:this.errorNoticed})}}#o(){this.featAggregate?this.featAggregate.mode!==je.g.FULL&&this.featAggregate.initializeRecording(je.g.FULL,!0):(this.#i=je.g.FULL,this.#s(t.Qb.API),this.recorder&&this.recorder.parent.mode!==je.g.FULL&&(this.recorder.parent.mode=je.g.FULL,this.recorder.stopRecording(),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording))}}var Ce=i(3962);class ke extends v{static featureName=Ce.TZ;constructor(e,t,r=!0){if(super(e,t,Ce.TZ,r),!h.RI||!(0,A.dV)().o.MO)return;const n=we(this.ee),i=(0,q.u)(this.ee),o=()=>(0,E.p)("newURL",[(0,I.t)(),""+window.location],void 0,this.featureName,this.ee);n.on("pushState-end",o),n.on("replaceState-end",o);try{this.removeOnAbort=new AbortController}catch(e){}(0,N.sp)("popstate",(e=>(0,E.p)("newURL",[e.timeStamp,""+window.location],void 0,this.featureName,this.ee)),!0,this.removeOnAbort?.signal);let a=!1;const s=new((0,A.dV)().o.MO)(((e,t)=>{a||(a=!0,requestAnimationFrame((()=>{(0,E.p)("newDom",[(0,I.t)()],void 0,this.featureName,this.ee),a=!1})))})),c=(0,m.s)((e=>{(0,E.p)("newUIEvent",[e],void 0,this.featureName,this.ee),s.observe(document.body,{attributes:!0,childList:!0,subtree:!0,characterData:!0})}),100,{leading:!0});i.on("fn-start",(([e])=>{Ce.tC.includes(e?.type)&&c(e)}));for(let e of Ce.tC)document.addEventListener(e,(()=>{}));this.abortHandler=function(){this.removeOnAbort?.abort(),s.disconnect(),this.abortHandler=void 0},this.importAggregator({domObserver:s})}}var Le=i(7378);const De={},He=["appendChild","insertBefore","replaceChild"];function Me(e){const t=function(e){return(e||Z.ee).get("jsonp")}(e);if(!h.RI||De[t.debugId])return t;De[t.debugId]=!0;var r=(0,Y.YM)(t),n=/[?&](?:callback|cb)=([^&#]+)/,i=/(.*)\.([^.]+)/,o=/^(\w+)(\.|$)(.*)$/;function a(e,t){if(!e)return t;const r=e.match(o),n=r[1];return a(r[3],t[n])}return r.inPlace(Node.prototype,He,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var o=(s=e.src,c=s.match(n),c?c[1]:null);var s,c;if(!o)return;var u=function(e){var t=e.match(i);if(t&&t.length>=3)return{key:t[2],parent:a(t[1],window)};return{key:e,parent:window}}(o);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,N.jT)(!1)),e.removeEventListener("error",f,(0,N.jT)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,N.jT)(!1)),e.removeEventListener("error",f,(0,N.jT)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,N.jT)(!1)),e.addEventListener("error",f,(0,N.jT)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const Ke={};function Ue(e){const t=function(e){return(e||Z.ee).get("promise")}(e);if(Ke[t.debugId])return t;Ke[t.debugId]=!0;var r=t.context,n=(0,Y.YM)(t),i=h.gm.Promise;return i&&function(){function e(r){var o=t.context(),a=n(r,"executor-",o,null,!1);const s=Reflect.construct(i,[a],e);return t.context(s).getCtx=function(){return o},s}h.gm.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return i.toString()},Object.setPrototypeOf(e,i),["all","race"].forEach((function(r){const n=i[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=i[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=i.prototype;const o=i.prototype.then;i.prototype.then=function(...e){var i=this,a=r(i);a.promise=i,e[0]=n(e[0],"cb-",a,null,!1),e[1]=n(e[1],"cb-",a,null,!1);const s=o.apply(this,e);return a.nextPromise=s,t.emit("propagate",[i,!0],s,!1,!1),s},i.prototype.then[Y.Jt]=o,t.on("executor-start",(function(e){e[0]=n(e[0],"resolve-",this,null,!1),e[1]=n(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const Ve={},Ge="setTimeout",Be="setInterval",Fe="clearTimeout",We="-start",ze=[Ge,"setImmediate",Be,Fe,"clearImmediate"];function qe(e){const t=function(e){return(e||Z.ee).get("timer")}(e);if(Ve[t.debugId]++)return t;Ve[t.debugId]=1;var r=(0,Y.YM)(t);return r.inPlace(h.gm,ze.slice(0,2),Ge+"-"),r.inPlace(h.gm,ze.slice(2,3),Be+"-"),r.inPlace(h.gm,ze.slice(3),Fe+"-"),t.on(Be+We,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(Ge+We,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}const Ze={};function Ye(e){const t=function(e){return(e||Z.ee).get("mutation")}(e);if(!h.RI||Ze[t.debugId])return t;Ze[t.debugId]=!0;var r=(0,Y.YM)(t),n=h.gm.MutationObserver;return n&&(window.MutationObserver=function(e){return this instanceof n?new n(r(e,"fn-")):n.apply(this,arguments)},MutationObserver.prototype=n.prototype),t}const{TZ:Xe,d3:Je,Kp:Qe,$p:$e,wW:et,e5:tt,tH:rt,uP:nt,rw:it,Lc:ot}=Le;class at extends v{static featureName=Xe;constructor(e,t,r=!0){if(super(e,t,Xe,r),!h.RI)return;try{this.removeOnAbort=new AbortController}catch(e){}let n,i=0;const o=this.ee.get("tracer"),a=Me(this.ee),s=Ue(this.ee),c=qe(this.ee),u=Q(this.ee),d=this.ee.get("events"),l=se(this.ee),f=we(this.ee),g=Ye(this.ee);function p(e,t){f.emit("newURL",[""+window.location,t])}function m(){i++,n=window.location.hash,this[nt]=(0,I.t)()}function v(){i--,window.location.hash!==n&&p(0,!0);var e=(0,I.t)();this[tt]=~~this[tt]+e-this[nt],this[ot]=e}function b(e,t){e.on(t,(function(){this[t]=(0,I.t)()}))}this.ee.on(nt,m),s.on(it,m),a.on(it,m),this.ee.on(ot,v),s.on(et,v),a.on(et,v),this.ee.on("fn-err",((...t)=>{t[2]?.__newrelic?.[e]||(0,E.p)("function-err",[...t],void 0,this.featureName,this.ee)})),this.ee.buffer([nt,ot,"xhr-resolved"],this.featureName),d.buffer([nt],this.featureName),c.buffer(["setTimeout"+Qe,"clearTimeout"+Je,nt],this.featureName),u.buffer([nt,"new-xhr","send-xhr"+Je],this.featureName),l.buffer([rt+Je,rt+"-done",rt+$e+Je,rt+$e+Qe],this.featureName),f.buffer(["newURL"],this.featureName),g.buffer([nt],this.featureName),s.buffer(["propagate",it,et,"executor-err","resolve"+Je],this.featureName),o.buffer([nt,"no-"+nt],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(l,rt+Je),b(l,rt+"-done"),b(a,"new-jsonp"),b(a,"jsonp-end"),b(a,"cb-start"),f.on("pushState-end",p),f.on("replaceState-end",p),window.addEventListener("hashchange",p,(0,N.jT)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",p,(0,N.jT)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){p(0,i>1)}),(0,N.jT)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#n,this.importAggregator()}#n(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}var st=i(3333);class ct extends v{static featureName=st.TZ;constructor(e,t,r=!0){super(e,t,st.TZ,r);const n=(0,a.D0)(this.agentIdentifier),i=[n.page_action.enabled,n.user_actions.enabled];h.RI&&n.user_actions.enabled&&(st.Zp.forEach((e=>(0,N.sp)(e,(e=>(0,E.p)("ua",[e],void 0,this.featureName,this.ee)),!0))),st.qN.forEach((e=>(0,N.sp)(e,(e=>(0,E.p)("ua",[e],void 0,this.featureName,this.ee)))))),i.some((e=>e))?this.importAggregator():(0,d.x3)(this.agentIdentifier,this.featureName)}}var ut=i(993),dt=i(3785);class lt extends v{static featureName=ut.TZ;constructor(e,t,r=!0){super(e,t,ut.TZ,r);const n=this.ee;this.ee.on("wrap-logger-end",(function([e]){const{level:t,customAttributes:r}=this;(0,dt.R)(n,e,r,t)})),this.importAggregator()}}new class extends n{constructor(t,r){super(r),h.gm?(this.sharedAggregator=new x({agentIdentifier:this.agentIdentifier}),this.features={},(0,A.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(y),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===o.K.softNav)),(0,u.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=c(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>o.P[e.featureName]-o.P[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==o.K.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===o.K.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===o.K.softNav)return;const n=function(e){switch(e){case o.K.ajax:return[o.K.jserrors];case o.K.sessionTrace:return[o.K.ajax,o.K.pageViewEvent];case o.K.sessionReplay:return[o.K.sessionTrace];case o.K.pageViewTiming:return[o.K.pageViewEvent];default:return[]}}(r.featureName).filter((e=>!(e in this.features)));n.length>0&&(0,e.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}))}catch(t){(0,e.R)(22,t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,A.Zm)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[me,y,_,_e,Pe,P,U,ct,lt,ke,at],loaderType:"spa"})})()})();</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Home - The Chess Website</title>
+
+		<!-- All in One SEO 4.6.2 - aioseo.com -->
+		<meta name="description" content="Learn, Practice and Play Chess. The Chess Website is your one stop shop for all things chess. Whether you are brand new to the game, or you have played your whole life and look to take your game to the next level, this is the place for you. The site is continually updated with substantial" />
+		<meta name="robots" content="max-image-preview:large" />
+		<link rel="canonical" href="https://www.thechesswebsite.com/" />
+		<meta name="generator" content="All in One SEO (AIOSEO) 4.6.2" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="The Chess Website - Learn, Practice and Play Chess!" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Home - The Chess Website" />
+		<meta property="og:description" content="Learn, Practice and Play Chess. The Chess Website is your one stop shop for all things chess. Whether you are brand new to the game, or you have played your whole life and look to take your game to the next level, this is the place for you. The site is continually updated with substantial" />
+		<meta property="og:url" content="https://www.thechesswebsite.com/" />
+		<meta property="og:image" content="https://www.thechesswebsite.com/wp-content/uploads/2015/08/logo.png" />
+		<meta property="og:image:secure_url" content="https://www.thechesswebsite.com/wp-content/uploads/2015/08/logo.png" />
+		<meta property="og:image:width" content="943" />
+		<meta property="og:image:height" content="123" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Home - The Chess Website" />
+		<meta name="twitter:description" content="Learn, Practice and Play Chess. The Chess Website is your one stop shop for all things chess. Whether you are brand new to the game, or you have played your whole life and look to take your game to the next level, this is the place for you. The site is continually updated with substantial" />
+		<meta name="twitter:image" content="https://www.thechesswebsite.com/wp-content/uploads/2015/08/logo.png" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/www.thechesswebsite.com\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/www.thechesswebsite.com\/#listItem","position":1,"name":"Home"}]},{"@type":"Organization","@id":"https:\/\/www.thechesswebsite.com\/#organization","name":"The Chess Website","url":"https:\/\/www.thechesswebsite.com\/","logo":{"@type":"ImageObject","url":"https:\/\/www.thechesswebsite.com\/wp-content\/uploads\/2015\/08\/logo.png","@id":"https:\/\/www.thechesswebsite.com\/#organizationLogo","width":943,"height":123},"image":{"@id":"https:\/\/www.thechesswebsite.com\/#organizationLogo"}},{"@type":"WebPage","@id":"https:\/\/www.thechesswebsite.com\/#webpage","url":"https:\/\/www.thechesswebsite.com\/","name":"Home - The Chess Website","description":"Learn, Practice and Play Chess. The Chess Website is your one stop shop for all things chess. Whether you are brand new to the game, or you have played your whole life and look to take your game to the next level, this is the place for you. The site is continually updated with substantial","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/www.thechesswebsite.com\/#website"},"breadcrumb":{"@id":"https:\/\/www.thechesswebsite.com\/#breadcrumblist"},"datePublished":"2012-08-28T07:48:00+00:00","dateModified":"2022-04-27T22:05:22+00:00"},{"@type":"WebSite","@id":"https:\/\/www.thechesswebsite.com\/#website","url":"https:\/\/www.thechesswebsite.com\/","name":"The Chess Website","description":"Learn, Practice and Play Chess!","inLanguage":"en-US","publisher":{"@id":"https:\/\/www.thechesswebsite.com\/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.thechesswebsite.com\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<script type="text/javascript">
+    (function() {
+  var pvData = {"source":"Direct","referrer":"Direct","visitor_type":"logged out","visitor_login_status":"logged out","visitor_id":0,"page_title":"Home - The Chess Website","post_type":"page","post_type_with_prefix":"single page","post_categories":"","post_tags":"","post_author":"Kevin Butler","post_full_date":"August 28, 2012","post_year":"2012","post_month":"08","post_day":"28","is_front_page":1,"is_home":1,"search_query":"","search_results_count":0};
+  var body = {
+    url: encodeURIComponent(window.location.href),
+    referrer: encodeURIComponent(document.referrer)
+  };
+
+  function makePostRequest(e,t){var n=[];if(t.body){for(var o in t.body)n.push(encodeURIComponent(o)+"="+encodeURIComponent(t.body[o]));t.body=n.join("&")}return window.fetch?new Promise(n=>{var o={method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},redirect:"follow",body:{},...t};window.fetch(e,o).then(e=>{n(e.text())})}):new Promise(t=>{var o;"undefined"==typeof XMLHttpRequest&&t(null),(o=new XMLHttpRequest).open("POST",e,!0),o.onreadystatechange=function(){4==o.readyState&&200==o.status&&t(o.responseText)},o.setRequestHeader("Content-type","application/x-www-form-urlencoded"),o.send(n.join("&"))})}
+  function observeAjaxCartActions(e){new PerformanceObserver(function(t){for(var n=t.getEntries(),r=0;r<n.length;r++)["xmlhttprequest","fetch"].includes(n[r].initiatorType)&&['=get_refreshed_fragments', 'add_to_cart'].some(p => n[r].name.includes(p))&&fetchCart(e)}).observe({entryTypes:["resource"]})};
+
+  function fetchCart(adapter) {
+    makePostRequest("//www.thechesswebsite.com/index.php?plugin=optimonk&action=cartData", { body })
+      .then((response) => {
+        var data = JSON.parse(response);
+        setCartData(data, adapter);
+      })
+  }
+
+  function setCartData(cartData, adapter) {
+    adapter.Cart.clear();
+
+    cartData.cart.forEach(cartItem => {
+      adapter.Cart.add(cartItem.sku, {quantity: cartItem.quantity, price: cartItem.price, name: cartItem.name});
+    });
+    Object.keys(cartData.avs).forEach((key, value) => {
+      adapter.attr(`wp_${key}`, cartData.avs[key]);
+    })
+  }
+
+  function setAssocData(assocData, adapter) {
+    Object.keys(assocData).forEach((key) => {
+      adapter.attr(`wp_${key}`, assocData[key]);
+    })
+  }
+
+  var RuleHandler = {
+    hasVisitorCartRules: (campaignMeta) => {
+      return !!(campaignMeta.rules.visitorCart || campaignMeta.rules.visitorCartRevamp);
+    },
+    hasVisitorAttributeRule: (campaignMeta) => {
+      return !!campaignMeta.rules.visitorAttribute;
+    }
+  }
+
+  document.querySelector('html').addEventListener('optimonk#embedded-campaigns-init', function(e) {
+    var campaignsData = e.parameters;
+
+    if (!campaignsData.length) {
+      return;
+    }
+
+    var adapter = window.OptiMonkEmbedded.Visitor.createAdapter();
+    var hasCartRule = false;
+    var hasAttributeRule = false;
+
+    campaignsData.forEach((campaignMetaData) => {
+      hasCartRule = hasCartRule || RuleHandler.hasVisitorCartRules(campaignMetaData);
+      hasAttributeRule = hasAttributeRule || RuleHandler.hasVisitorAttributeRule(campaignMetaData);
+    });
+
+    setAssocData(pvData, adapter);
+
+    if (hasCartRule) {
+      observeAjaxCartActions(adapter);
+      fetchCart(adapter);
+    }
+
+    if (hasAttributeRule) {
+      makePostRequest("//www.thechesswebsite.com/index.php?plugin=optimonk&action=productData", { body })
+        .then((response) => {
+          var data = JSON.parse(response);
+          setAssocData(data, adapter);
+        })
+    }
+  });
+
+  document.querySelector('html').addEventListener('optimonk#campaigns_initialized', function () {
+    if (!OptiMonk.campaigns) {
+      return;
+    }
+
+    var adapter = window.OptiMonk.Visitor.createAdapter();
+
+    setAssocData(pvData, adapter);
+
+    if (OptiMonk.campaigns.filter(campaign => campaign.hasVisitorCartRules()).length) {
+      observeAjaxCartActions(adapter);
+      fetchCart(adapter);
+    }
+
+    if (OptiMonk.campaigns.filter(campaign => campaign.hasVisitorAttributeRules()).length) {
+      makePostRequest("//www.thechesswebsite.com/index.php?plugin=optimonk&action=productData", { body })
+        .then((response) => {
+          var data = JSON.parse(response);
+          setAssocData(data, adapter);
+        });
+    }
+  });
+}());
+
+</script>
+<script type="text/javascript" src="https://onsite.optimonk.com/script.js?account=219341" async></script><link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//pagead2.googlesyndication.com' />
+<link rel="alternate" type="application/rss+xml" title="The Chess Website &raquo; Feed" href="https://www.thechesswebsite.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Chess Website &raquo; Comments Feed" href="https://www.thechesswebsite.com/comments/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v9.2.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-FQ8FN1FS2D"  data-cfasync="false" data-wpfc-render="false" async></script>
+			<script data-cfasync="false" data-wpfc-render="false">
+				var mi_version = '9.2.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/www.thechesswebsite.com\/"};
+				if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-FQ8FN1FS2D',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-FQ8FN1FS2D', {"forceSSL":"true","link_attribution":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<link rel='stylesheet' id='wc-memberships-blocks-css' href='https://www.thechesswebsite.com/wp-content/plugins/woocommerce-memberships/assets/css/blocks/wc-memberships-blocks.min.css?ver=1.24.0' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://www.thechesswebsite.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=8.9.3' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://www.thechesswebsite.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=8.9.3' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://www.thechesswebsite.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=8.9.3' media='all' />
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='wc-memberships-frontend-css' href='https://www.thechesswebsite.com/wp-content/plugins/woocommerce-memberships/assets/css/frontend/wc-memberships-frontend.min.css?ver=1.24.0' media='all' />
+<link rel='stylesheet' id='c-grid-style-css' href='https://www.thechesswebsite.com/wp-content/themes/thechesswebsite/css/grid.css?ver=220316-233634' media='all' />
+<link rel='stylesheet' id='hello-elementor-child-style-css' href='https://www.thechesswebsite.com/wp-content/themes/thechesswebsite/style.css?ver=220316-233634' media='all' />
+<link rel='stylesheet' id='hello-elementor-css' href='https://www.thechesswebsite.com/wp-content/themes/hello-elementor/style.min.css?ver=2.9.0' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://www.thechesswebsite.com/wp-content/themes/hello-elementor/theme.min.css?ver=2.9.0' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://www.thechesswebsite.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.29.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://www.thechesswebsite.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.21.7' media='all' />
+<link rel='stylesheet' id='swiper-css' href='https://www.thechesswebsite.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
+<link rel='stylesheet' id='elementor-post-44331-css' href='https://www.thechesswebsite.com/wp-content/uploads/elementor/css/post-44331.css?ver=1716388949' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://www.thechesswebsite.com/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.13.2' media='all' />
+<link rel='stylesheet' id='namogo-icons-css' href='https://www.thechesswebsite.com/wp-content/plugins/elementor-extras/assets/lib/nicons/css/nicons.css?ver=2.2.51' media='all' />
+<link rel='stylesheet' id='elementor-extras-frontend-css' href='https://www.thechesswebsite.com/wp-content/plugins/elementor-extras/assets/css/frontend.min.css?ver=2.2.51' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://www.thechesswebsite.com/wp-content/uploads/elementor/css/global.css?ver=1716388951' media='all' />
+<link rel='stylesheet' id='elementor-post-1410-css' href='https://www.thechesswebsite.com/wp-content/uploads/elementor/css/post-1410.css?ver=1716388952' media='all' />
+<link rel='stylesheet' id='elementor-post-30376-css' href='https://www.thechesswebsite.com/wp-content/uploads/elementor/css/post-30376.css?ver=1716388952' media='all' />
+<link rel='stylesheet' id='elementor-post-30378-css' href='https://www.thechesswebsite.com/wp-content/uploads/elementor/css/post-30378.css?ver=1716388952' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://www.thechesswebsite.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://www.thechesswebsite.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://www.thechesswebsite.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3' media='all' />
+<script id="gtmkit-js-before" data-cfasync="false" data-nowprocket="" data-cookieconsent="ignore">
+		window.gtmkit_settings = {"datalayer_name":"dataLayer","console_log":false,"wc":{"use_sku":false,"pid_prefix":"","add_shipping_info":{"config":1},"add_payment_info":{"config":1},"view_item":{"config":0},"view_item_list":{"config":0},"text":{"wp-block-handpicked-products":"Handpicked Products","wp-block-product-best-sellers":"Best Sellers","wp-block-product-category":"Product Category","wp-block-product-new":"New Products","wp-block-product-on-sale":"Products On Sale","wp-block-products-by-attribute":"Products By Attribute","wp-block-product-tag":"Product Tag","wp-block-product-top-rated":"Top Rated Products","shipping-tier-not-found":"Shipping tier not found","payment-method-not-found":"Payment method not found"},"css_selectors":{"single_product_wishlist":".add_to_wishlist, .tinvwl_add_to_wishlist_button:not(.tinvwl-product-in-list,.disabled-add-wishlist)","product_list_select_item":".products .product:not(.product-category) a:not(.add_to_cart_button.ajax_add_to_cart,.add_to_wishlist,.tinvwl_add_to_wishlist_button),.wc-block-grid__products li:not(.product-category) a:not(.add_to_cart_button.ajax_add_to_cart,.add_to_wishlist,.tinvwl_add_to_wishlist_button),.woocommerce-grouped-product-list-item__label a:not(.add_to_wishlist,.tinvwl_add_to_wishlist_button)","product_list_wishlist":".add_to_wishlist, .tinvwl_add_to_wishlist_button:not(.tinvwl-product-in-list)"}}};
+		window.gtmkit_data = {"wc":{"currency":"USD","is_cart":false,"is_checkout":false,"blocks":{}}};
+		window.dataLayer = window.dataLayer || [];
+				
+</script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=9.2.0" id="monsterinsights-frontend-script-js" async data-wp-strategy="async"></script>
+<script data-cfasync="false" data-wpfc-render="false" id='monsterinsights-frontend-script-js-extra'>var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.thechesswebsite.com","hash_tracking":"false","v4_id":"G-FQ8FN1FS2D"};</script>
+<script src="https://www.thechesswebsite.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://www.thechesswebsite.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script id="print-invoices-packing-slip-labels-for-woocommerce_public-js-extra">
+var wf_pklist_params_public = {"msgs":{"invoice_number_prompt_free_order":"\u2018Generate invoice for free orders\u2019 is disabled in Invoice settings > Advanced. You are attempting to generate invoice for this free order. Proceed?","creditnote_number_prompt":"Refund in this order seems not having credit number yet. Do you want to manually generate one ?","invoice_number_prompt_no_from_addr":"Please fill the `from address` in the plugin's general settings.","invoice_title_prompt":"Invoice","invoice_number_prompt":"number has not been generated yet. Do you want to manually generate one ?","pop_dont_show_again":false}};
+</script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/print-invoices-packing-slip-labels-for-woocommerce/public/js/wf-woocommerce-packing-list-public.js?ver=4.5.1" id="print-invoices-packing-slip-labels-for-woocommerce_public-js"></script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.9.3" id="jquery-blockui-js" defer data-wp-strategy="defer"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/www.thechesswebsite.com\/cart\/","is_cart":"","cart_redirect_after_add":"yes"};
+</script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.9.3" id="wc-add-to-cart-js" defer data-wp-strategy="defer"></script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.9.3" id="js-cookie-js" defer data-wp-strategy="defer"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+</script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.9.3" id="woocommerce-js" defer data-wp-strategy="defer"></script>
+<script id="gtmkit-container-js-after" data-cfasync="false" data-nowprocket="" data-cookieconsent="ignore">
+/* Google Tag Manager */
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WWMV97NF');
+/* End Google Tag Manager */
+</script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/gtm-kit/assets/integration/woocommerce.js?ver=1.22.3" id="gtmkit-woocommerce-js" defer data-wp-strategy="defer"></script>
+<script id="gtmkit-datalayer-js-before" data-cfasync="false" data-nowprocket="" data-cookieconsent="ignore">
+const gtmkit_dataLayer_content = {"pageType":"frontpage"};
+dataLayer.push( gtmkit_dataLayer_content );
+</script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+
+<!-- Google Analytics snippet added by Site Kit -->
+<script src="https://www.googletagmanager.com/gtag/js?id=GT-MQP9TTL" id="google_gtagjs-js" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["www.thechesswebsite.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-MQP9TTL");
+</script>
+
+<!-- End Google tag (gtag.js) snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="https://www.thechesswebsite.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.thechesswebsite.com/wp-json/wp/v2/pages/1410" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.thechesswebsite.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.6.2" />
+<meta name="generator" content="WooCommerce 8.9.3" />
+<link rel='shortlink' href='https://www.thechesswebsite.com/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.thechesswebsite.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thechesswebsite.com%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.thechesswebsite.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thechesswebsite.com%2F&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.127.0" />		<script>
+			( function() {
+				window.onpageshow = function( event ) {
+					// Defined window.wpforms means that a form exists on a page.
+					// If so and back/forward button has been clicked,
+					// force reload a page to prevent the submit button state stuck.
+					if ( typeof window.wpforms !== 'undefined' && event.persisted ) {
+						window.location.reload();
+					}
+				};
+			}() );
+		</script>
+			<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	
+<!-- Google AdSense meta tags added by Site Kit -->
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<!-- End Google AdSense meta tags added by Site Kit -->
+<meta name="generator" content="Elementor 3.21.7; features: e_optimized_assets_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+
+<!-- Google AdSense snippet added by Site Kit -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7049350715563434&amp;host=ca-host-pub-2644536267352236" crossorigin="anonymous"></script>
+
+<!-- End Google AdSense snippet added by Site Kit -->
+<link rel="icon" href="https://www.thechesswebsite.com/wp-content/uploads/2023/08/cropped-Untitled-design-2-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.thechesswebsite.com/wp-content/uploads/2023/08/cropped-Untitled-design-2-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.thechesswebsite.com/wp-content/uploads/2023/08/cropped-Untitled-design-2-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.thechesswebsite.com/wp-content/uploads/2023/08/cropped-Untitled-design-2-270x270.png" />
+<style id="wpforms-css-vars-root">
+				:root {
+					--wpforms-field-border-radius: 3px;
+--wpforms-field-border-style: solid;
+--wpforms-field-border-size: 1px;
+--wpforms-field-background-color: #ffffff;
+--wpforms-field-border-color: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-border-color-spare: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-text-color: rgba( 0, 0, 0, 0.7 );
+--wpforms-field-menu-color: #ffffff;
+--wpforms-label-color: rgba( 0, 0, 0, 0.85 );
+--wpforms-label-sublabel-color: rgba( 0, 0, 0, 0.55 );
+--wpforms-label-error-color: #d63637;
+--wpforms-button-border-radius: 3px;
+--wpforms-button-border-style: none;
+--wpforms-button-border-size: 1px;
+--wpforms-button-background-color: #066aab;
+--wpforms-button-border-color: #066aab;
+--wpforms-button-text-color: #ffffff;
+--wpforms-page-break-color: #066aab;
+--wpforms-background-image: none;
+--wpforms-background-position: center center;
+--wpforms-background-repeat: no-repeat;
+--wpforms-background-size: cover;
+--wpforms-background-width: 100px;
+--wpforms-background-height: 100px;
+--wpforms-background-color: rgba( 0, 0, 0, 0 );
+--wpforms-background-url: none;
+--wpforms-container-padding: 0px;
+--wpforms-container-border-style: none;
+--wpforms-container-border-width: 1px;
+--wpforms-container-border-color: #000000;
+--wpforms-container-border-radius: 3px;
+--wpforms-field-size-input-height: 43px;
+--wpforms-field-size-input-spacing: 15px;
+--wpforms-field-size-font-size: 16px;
+--wpforms-field-size-line-height: 19px;
+--wpforms-field-size-padding-h: 14px;
+--wpforms-field-size-checkbox-size: 16px;
+--wpforms-field-size-sublabel-spacing: 5px;
+--wpforms-field-size-icon-size: 1;
+--wpforms-label-size-font-size: 16px;
+--wpforms-label-size-line-height: 19px;
+--wpforms-label-size-sublabel-font-size: 14px;
+--wpforms-label-size-sublabel-line-height: 17px;
+--wpforms-button-size-font-size: 17px;
+--wpforms-button-size-height: 41px;
+--wpforms-button-size-padding-h: 15px;
+--wpforms-button-size-margin-top: 10px;
+--wpforms-container-shadow-size-box-shadow: none;
+
+				}
+			</style></head>
+<body class="home page-template-default page page-id-1410 wp-custom-logo theme-hello-elementor woocommerce-no-js elementor-default elementor-kit-44331 elementor-page elementor-page-1410">
+
+
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<div data-elementor-type="header" data-elementor-id="30376" class="elementor elementor-30376 elementor-location-header">
+					<div class="elementor-section-wrap">
+								<section class="elementor-section elementor-top-section elementor-element elementor-element-1c155ade elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1c155ade" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3ab58ee6" data-id="3ab58ee6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-47d773ff e-grid-align-left e-grid-align-mobile-center elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="47d773ff" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-3562b2c" href="https://twitter.com/thechesswebsite" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<i class="fab fa-twitter"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-e57b50e" href="https://www.youtube.com/user/thechesswebsite" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-652d18" data-id="652d18" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2bdfd10e elementor-nav-menu__align-center elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="2bdfd10e" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+				<ul id="menu-1-2bdfd10e" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30421"><a href="https://www.thechesswebsite.com/shop/" class="elementor-item">Shop</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30422"><a href="https://www.thechesswebsite.com/cart/" class="elementor-item">Cart</a></li>
+<li class="login-btn menu-item menu-item-type-post_type menu-item-object-page menu-item-30423"><a href="https://www.thechesswebsite.com/my-account/" class="elementor-item">Sign in</a></li>
+<li class="join-btn menu-item menu-item-type-post_type menu-item-object-page menu-item-30433"><a href="https://www.thechesswebsite.com/start-membership/" class="elementor-item">Join</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-2bdfd10e" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30421"><a href="https://www.thechesswebsite.com/shop/" class="elementor-item" tabindex="-1">Shop</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30422"><a href="https://www.thechesswebsite.com/cart/" class="elementor-item" tabindex="-1">Cart</a></li>
+<li class="login-btn menu-item menu-item-type-post_type menu-item-object-page menu-item-30423"><a href="https://www.thechesswebsite.com/my-account/" class="elementor-item" tabindex="-1">Sign in</a></li>
+<li class="join-btn menu-item menu-item-type-post_type menu-item-object-page menu-item-30433"><a href="https://www.thechesswebsite.com/start-membership/" class="elementor-item" tabindex="-1">Join</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1e3db632 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1e3db632" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7f8a3008" data-id="7f8a3008" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-32810072 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="32810072" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+								<a href="https://www.thechesswebsite.com">
+			<img fetchpriority="high" width="943" height="123" src="https://www.thechesswebsite.com/wp-content/uploads/2015/08/logo.png" class="attachment-full size-full wp-image-4512" alt="" srcset="https://www.thechesswebsite.com/wp-content/uploads/2015/08/logo.png 943w, https://www.thechesswebsite.com/wp-content/uploads/2015/08/logo-600x78.png 600w, https://www.thechesswebsite.com/wp-content/uploads/2015/08/logo-160x21.png 160w, https://www.thechesswebsite.com/wp-content/uploads/2015/08/logo-190x25.png 190w" sizes="(max-width: 943px) 100vw, 943px" />				</a>
+										</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2c2a4b50 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2c2a4b50" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4d508012" data-id="4d508012" data-element_type="column" id="main-menu-col">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-63369f61 elementor-nav-menu--stretch elementor-nav-menu__align-left elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="63369f61" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+				<ul id="menu-1-63369f61" class="elementor-nav-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-65"><a title="chess basics" href="https://www.thechesswebsite.com/learn-to-play-chess/" class="elementor-item">Basics</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-67"><a title="chess openings" href="https://www.thechesswebsite.com/chess-openings/" class="elementor-item">Openings</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68"><a title="chess strategy" href="https://www.thechesswebsite.com/chess-strategy/" class="elementor-item">Strategy</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-69"><a title="chess end game" href="https://www.thechesswebsite.com/chess-end-game-tactics/" class="elementor-item">End Game</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-893"><a title="chess puzzles" href="https://www.thechesswebsite.com/chess-puzzles/" class="elementor-item">Puzzles</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-71"><a title="famous chess games" href="https://www.thechesswebsite.com/famous-chess-games/" class="elementor-item">Famous Games</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-72"><a title="chess practice" href="https://www.thechesswebsite.com/chess-practice/" class="elementor-item">Practice</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-79"><a title="chess traps" href="https://www.thechesswebsite.com/chess-traps/" class="elementor-item">Traps</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>			<span class="elementor-screen-only">Menu</span>
+		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-63369f61" class="elementor-nav-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-65"><a title="chess basics" href="https://www.thechesswebsite.com/learn-to-play-chess/" class="elementor-item" tabindex="-1">Basics</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-67"><a title="chess openings" href="https://www.thechesswebsite.com/chess-openings/" class="elementor-item" tabindex="-1">Openings</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68"><a title="chess strategy" href="https://www.thechesswebsite.com/chess-strategy/" class="elementor-item" tabindex="-1">Strategy</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-69"><a title="chess end game" href="https://www.thechesswebsite.com/chess-end-game-tactics/" class="elementor-item" tabindex="-1">End Game</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-893"><a title="chess puzzles" href="https://www.thechesswebsite.com/chess-puzzles/" class="elementor-item" tabindex="-1">Puzzles</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-71"><a title="famous chess games" href="https://www.thechesswebsite.com/famous-chess-games/" class="elementor-item" tabindex="-1">Famous Games</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-72"><a title="chess practice" href="https://www.thechesswebsite.com/chess-practice/" class="elementor-item" tabindex="-1">Practice</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-79"><a title="chess traps" href="https://www.thechesswebsite.com/chess-traps/" class="elementor-item" tabindex="-1">Traps</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-66cf57c7" data-id="66cf57c7" data-element_type="column" id="search-col">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-602eedad ee-search-form-spacing--collapse ee-search-form-icon--search ee-grid-columns-3 ee-grid-columns-tablet-2 ee-grid-columns-mobile-1 elementor-widget elementor-widget-ee-search-form" data-id="602eedad" data-element_type="widget" data-settings="{&quot;columns&quot;:&quot;3&quot;,&quot;columns_tablet&quot;:&quot;2&quot;,&quot;columns_mobile&quot;:&quot;1&quot;}" data-widget_type="ee-search-form.classic">
+				<div class="elementor-widget-container">
+			<form class="ee-form ee-search-form ee-search-form-skin--classic" role="search" action="https://www.thechesswebsite.com" method="get" value="">
+			<input type="hidden" class="ee-form__field__control--search" name="post_type" value="post" /><input type="hidden" class="ee-form__field__control--search" name="post_type" value="page" /><input type="hidden" class="ee-form__field__control--search" name="post_type" value="e-landing-page" /><input type="hidden" class="ee-form__field__control--search" name="post_type" value="product" /><input type="hidden" class="ee-form__field__control--search" name="post_type" value="move" /><input type="hidden" class="ee-form__field__control--search" name="category" value="all" /><input type="hidden" class="ee-form__field__control--sent" name="ee_search_query" value="" /><div class="ee-search-form__container"><div class="ee-form__fields ee-search-form__fields">
+			<div class="ee-form__field ee-form__field--input ee-form__field--search ee-search-form__field">
+			<input placeholder="Search" class="ee-search-form__input ee-form__field__control ee-form__field__control--search ee-form__field__control--text ee-form__field__control--sent ee-form__field__control--input" type="search" name="s" title="Search" value="">
+		</div>		</div><button class="ee-search-form__submit ee-form__field__control ee-form__field__control--submit ee-form__field__control--text ee-form__field__control--sent ee-form__field__control--button ee-search-form__control--icon" type="submit">
+			<span class="elementor-screen-only">Search</span><i class="ee-search-form__icon nicon nicon-search-thick" aria-hidden="true"></i>		</button></div></form>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="ee-conditions--hidden elementor-section elementor-top-section elementor-element elementor-element-580babe elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-phone elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="580babe" data-element_type="section" data-settings="{&quot;ee_display_conditions_enable&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c13ec79" data-id="c13ec79" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="ee-conditions--hidden elementor-element elementor-element-c0ba98a elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-shortcode" data-id="c0ba98a" data-element_type="widget" data-settings="{&quot;ee_display_conditions_enable&quot;:&quot;yes&quot;,&quot;ee_display_conditions_output&quot;:&quot;yes&quot;}" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"></div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+							</div>
+				</div>
+		
+<main id="content" class="site-main post-1410 page type-page status-publish hentry">
+
+	
+	<div class="page-content">
+				<div data-elementor-type="wp-page" data-elementor-id="1410" class="elementor elementor-1410">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-6cf0a7a1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6cf0a7a1" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7cad2027 elementor-hidden-tablet elementor-hidden-phone" data-id="7cad2027" data-element_type="column" id="home-img-col">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-71bb6279 elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-image" data-id="71bb6279" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="330" height="306" src="https://www.thechesswebsite.com/wp-content/uploads/2012/08/ChessSet-e1490308057689.jpg" class="attachment-medium_large size-medium_large wp-image-4366" alt="" />													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1fb5bb1f" data-id="1fb5bb1f" data-element_type="column" id="home-intro-col">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6d357f8 elementor-widget elementor-widget-heading" data-id="6d357f8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Learn, Practice and Play Chess.</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7f5857b5 elementor-widget elementor-widget-text-editor" data-id="7f5857b5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>The Chess Website is your one stop shop for all things chess. Whether you are brand new to the game, or you have played your whole life and look to take your game to the next level, this is the place for you. The site is continually updated with substantial content thanks to the loyal support of the chess community. Most of the new things you see on the site are ideas from people like you so feel free to drop us an email if you want to see something added. Enjoy the site and best of luck at the chess table!</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-32f5976" data-id="32f5976" data-element_type="column" id="home-join-col1">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-fe376f1 elementor-widget elementor-widget-shortcode" data-id="fe376f1" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div id="join-now-container">
+	        <img decoding="async" src="https://www.thechesswebsite.com/wp-content/uploads/2020/04/icon-timer-white.png">
+	        <p>Get <strong>Unlimited Access</strong> To All Of Our Strategies, Practice Games And More</p>
+	        <div class="btn-wrapper">
+	        <a href=https://www.thechesswebsite.com/start-membership/>Join Now</a></div>
+	    </div>
+	    <style>
+			#join-now-container {
+			  font-family: "Gotham Book",Sans-serif; 
+			  background-color: #2a2b34;
+			  text-align: center;
+			  width: 100%;
+			  padding: 40px 40px 50px 40px;
+			  max-width:360px;
+			  margin:0 auto;
+			}
+			#join-now-container img {
+			  width: 100%;
+			  max-width:100px;
+			  margin: 0 0 20px 0;
+			  opacity: 0.2;
+			}
+			#join-now-container p {
+			  display: block;
+			  color: #fff;
+			  line-height: 1.2;
+			  letter-spacing: 0.5px;
+			  width: 100%;
+			  font-size: 20px;
+			  font-weight: 400;
+			  margin-bottom:10px;
+			}
+			#join-now-container a {
+			  background-color: #f15f55;
+			  color: #fff;
+			  cursor: pointer;
+			  border: none;
+			  text-align: center;
+			  padding: 10px 5px 12px 5px;
+			  margin: 0 auto; 
+			  border-radius:3px;
+			  font-size: 15px;
+			  font-weight: 600;
+			  text-decoration:none;
+			  display: block;
+			    max-width: 150px;
+			}
+			#join-now-container a:hover {
+			  opacity: 0.8;
+			}
+	    </style>
+				<div class="elementor-shortcode"></div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3eed7bb0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3eed7bb0" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3c9d4ef9" data-id="3c9d4ef9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e33dc44 elementor-widget elementor-widget-heading" data-id="e33dc44" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Everything You Need to Successfully Play Chess</h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-6fa9e18d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6fa9e18d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-39d484d" data-id="39d484d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2272b37d icon-kenceng elementor-widget elementor-widget-image" data-id="2272b37d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="143" height="190" src="https://www.thechesswebsite.com/wp-content/uploads/2012/08/icon-pawn-white-143x190.png" class="attachment-medium size-medium wp-image-4388" alt="" srcset="https://www.thechesswebsite.com/wp-content/uploads/2012/08/icon-pawn-white-143x190.png 143w, https://www.thechesswebsite.com/wp-content/uploads/2012/08/icon-pawn-white-120x160.png 120w, https://www.thechesswebsite.com/wp-content/uploads/2012/08/icon-pawn-white.png 200w" sizes="(max-width: 143px) 100vw, 143px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-84a183e elementor-widget elementor-widget-heading" data-id="84a183e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">LEARN TO PLAY</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3d4ff971 elementor-widget elementor-widget-text-editor" data-id="3d4ff971" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Understand the pieces &#8211; we’ll show you how they move, go over key concepts you should think about with each piece, and then show opening principles and discuss things that every chess player should know when they approach the beginning of a chess game.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-3275a652 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="3275a652" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/learn-to-play-chess/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">Learn To Play Chess</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/chess-openings/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">Chess Openings</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/play-chess-online/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">Play Chess Online</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-12b8452f" data-id="12b8452f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3e36fac3 icon-kenceng elementor-widget elementor-widget-image" data-id="3e36fac3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" decoding="async" width="198" height="198" src="https://www.thechesswebsite.com/wp-content/uploads/2012/08/icon-strategy-white.png" class="attachment-large size-large wp-image-4389" alt="" srcset="https://www.thechesswebsite.com/wp-content/uploads/2012/08/icon-strategy-white.png 198w, https://www.thechesswebsite.com/wp-content/uploads/2012/08/icon-strategy-white-100x100.png 100w, https://www.thechesswebsite.com/wp-content/uploads/2012/08/icon-strategy-white-160x160.png 160w, https://www.thechesswebsite.com/wp-content/uploads/2012/08/icon-strategy-white-190x190.png 190w" sizes="(max-width: 198px) 100vw, 198px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-f48d87c elementor-widget elementor-widget-heading" data-id="f48d87c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">TOURNAMENT ANALYSIS</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5e61dcd8 elementor-widget elementor-widget-text-editor" data-id="5e61dcd8" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>We cover all of the major chess tournaments from around the world. This section will always have the latest tournament coverage so be sure to bookmark this section and come back to see the world&#8217;s best battle it out for chess supremacy.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-5d830bea elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5d830bea" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/2021-world-chess-championship/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">2021 World Championships</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/famous-chess-games/2020-candidates-tournament/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">2021 Candidates Tournament</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/2019-riga-grand-prix/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">2019 Riga Grand Prix</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/2019-us-chess-championship/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">2019 US Chess Championship</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-558a896a" data-id="558a896a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-442d241e icon-kenceng elementor-widget elementor-widget-image" data-id="442d241e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" decoding="async" width="195" height="172" src="https://www.thechesswebsite.com/wp-content/uploads/2012/08/icon-checkmate-white.png" class="attachment-large size-large wp-image-4390" alt="" srcset="https://www.thechesswebsite.com/wp-content/uploads/2012/08/icon-checkmate-white.png 195w, https://www.thechesswebsite.com/wp-content/uploads/2012/08/icon-checkmate-white-160x141.png 160w, https://www.thechesswebsite.com/wp-content/uploads/2012/08/icon-checkmate-white-190x168.png 190w" sizes="(max-width: 195px) 100vw, 195px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-c9c90f1 elementor-widget elementor-widget-heading" data-id="c9c90f1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">ADDITIONAL ITEMS</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2a422c80 elementor-widget elementor-widget-text-editor" data-id="2a422c80" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>The Chess Website provides lots of tools to improve your chess game. Below you&#8217;ll find a powerful chess engine to analyze your own games and give recommendations for any chess position. We also have a list of additional sites that we support.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-163d1d15 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="163d1d15" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/chess-analysis/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">Chess Analysis</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/other-resources/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">Other Resources</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-716ab3fa elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="716ab3fa" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-78e88144" data-id="78e88144" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1949f65b elementor-widget elementor-widget-heading" data-id="1949f65b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Recent Chess Posts</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3c4724f4 elementor-grid-4 elementor-posts--align-center elementor-posts__hover-none elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-card-shadow-yes elementor-widget elementor-widget-posts" data-id="3c4724f4" data-element_type="widget" id="chess-posts" data-settings="{&quot;cards_columns&quot;:&quot;4&quot;,&quot;cards_columns_tablet&quot;:&quot;2&quot;,&quot;cards_columns_mobile&quot;:&quot;1&quot;,&quot;cards_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]},&quot;cards_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;cards_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.cards">
+				<div class="elementor-widget-container">
+					<div class="elementor-posts-container elementor-posts elementor-posts--skin-cards elementor-grid">
+				<article class="elementor-post elementor-grid-item post-59230 post type-post status-publish format-standard has-post-thumbnail hentry category-misc tag-1-d4 tag-1-d4-nf6 tag-1-d4-nf6-2-c4 tag-1-d4-nf6-2-c4-g6 tag-1-d4-nf6-2-c4-g6-3-nc3 tag-1-d4-nf6-2-c4-g6-3-nc3-d5 tag-1-d4-nf6-2-c4-g6-3-nc3-d5-4-cxd5 tag-1-d4-nf6-2-c4-g6-3-nc3-d5-4-cxd5-nxd5">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://www.thechesswebsite.com/nadanian-attack/" ><div class="elementor-post__thumbnail"><img loading="lazy" decoding="async" width="250" height="250" src="https://www.thechesswebsite.com/wp-content/uploads/2021/07/Nadanian-Attack.png" class="attachment-full size-full wp-image-50253" alt="" srcset="https://www.thechesswebsite.com/wp-content/uploads/2021/07/Nadanian-Attack.png 250w, https://www.thechesswebsite.com/wp-content/uploads/2021/07/Nadanian-Attack-190x190.png 190w, https://www.thechesswebsite.com/wp-content/uploads/2021/07/Nadanian-Attack-160x160.png 160w, https://www.thechesswebsite.com/wp-content/uploads/2021/07/Nadanian-Attack-100x100.png 100w" sizes="(max-width: 250px) 100vw, 250px" /></div></a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://www.thechesswebsite.com/nadanian-attack/" >
+				Nadanian Attack			</a>
+		</h3>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-59251 post type-post status-publish format-standard has-post-thumbnail hentry category-misc tag-1-d4-d5-2-c4 tag-1-d4-d5-2-c4-c6 tag-1-d4-d5-2-c4-c6-3-nf3 tag-1-d4-d5-2-c4-c6-3-nf3-nf6 tag-1-d4-d5-2-c4-c6-3-nf3-nf6-4-nc3 tag-1-d4 tag-1-d4-d5">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://www.thechesswebsite.com/chebanenko-slav/" ><div class="elementor-post__thumbnail"><img loading="lazy" decoding="async" width="250" height="250" src="https://www.thechesswebsite.com/wp-content/uploads/2021/05/chebanenko-slav.jpg" class="attachment-full size-full wp-image-49050" alt="" srcset="https://www.thechesswebsite.com/wp-content/uploads/2021/05/chebanenko-slav.jpg 250w, https://www.thechesswebsite.com/wp-content/uploads/2021/05/chebanenko-slav-190x190.jpg 190w, https://www.thechesswebsite.com/wp-content/uploads/2021/05/chebanenko-slav-160x160.jpg 160w, https://www.thechesswebsite.com/wp-content/uploads/2021/05/chebanenko-slav-100x100.jpg 100w" sizes="(max-width: 250px) 100vw, 250px" /></div></a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://www.thechesswebsite.com/chebanenko-slav/" >
+				Chebanenko Slav			</a>
+		</h3>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-59246 post type-post status-publish format-standard has-post-thumbnail hentry category-misc tag-1-e4 tag-1-e4-e5 tag-1-e4-e5-2-f4 tag-1-e4-e5-2-f4-exf4 tag-1-e4-e5-2-f4-exf4-3-nf3 tag-1-e4-e5-2-f4-exf4-3-nf3-g5 tag-1-e4-e5-2-f4-exf4-3-nf3-g5-4-bc4">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://www.thechesswebsite.com/mcdonnell-gambit/" ><div class="elementor-post__thumbnail"><img loading="lazy" decoding="async" width="250" height="250" src="https://www.thechesswebsite.com/wp-content/uploads/2021/05/mcdonnell-gambit.jpg" class="attachment-full size-full wp-image-49053" alt="" srcset="https://www.thechesswebsite.com/wp-content/uploads/2021/05/mcdonnell-gambit.jpg 250w, https://www.thechesswebsite.com/wp-content/uploads/2021/05/mcdonnell-gambit-190x190.jpg 190w, https://www.thechesswebsite.com/wp-content/uploads/2021/05/mcdonnell-gambit-160x160.jpg 160w, https://www.thechesswebsite.com/wp-content/uploads/2021/05/mcdonnell-gambit-100x100.jpg 100w" sizes="(max-width: 250px) 100vw, 250px" /></div></a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://www.thechesswebsite.com/mcdonnell-gambit/" >
+				McDonnell Gambit			</a>
+		</h3>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-51929 post type-post status-publish format-standard has-post-thumbnail hentry category-misc tag-1-e4-e5-2-nf3-nc6-3-bc4-bc5-4-d3-f5 tag-1-e4 tag-1-e4-e5 tag-1-e4-e5-2-nf3 tag-1-e4-e5-2-nf3-nc6 tag-1-e4-e5-2-nf3-nc6-3-bc4 tag-1-e4-e5-2-nf3-nc6-3-bc4-bc5 tag-1-e4-e5-2-nf3-nc6-3-bc4-bc5-4-d3">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://www.thechesswebsite.com/lucchini-gambit/" ><div class="elementor-post__thumbnail"><img loading="lazy" decoding="async" width="500" height="500" src="https://www.thechesswebsite.com/wp-content/uploads/2021/09/lucchini-gambit.jpg" class="attachment-full size-full wp-image-51928" alt="" srcset="https://www.thechesswebsite.com/wp-content/uploads/2021/09/lucchini-gambit.jpg 500w, https://www.thechesswebsite.com/wp-content/uploads/2021/09/lucchini-gambit-190x190.jpg 190w, https://www.thechesswebsite.com/wp-content/uploads/2021/09/lucchini-gambit-160x160.jpg 160w, https://www.thechesswebsite.com/wp-content/uploads/2021/09/lucchini-gambit-300x300.jpg 300w, https://www.thechesswebsite.com/wp-content/uploads/2021/09/lucchini-gambit-100x100.jpg 100w" sizes="(max-width: 500px) 100vw, 500px" /></div></a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://www.thechesswebsite.com/lucchini-gambit/" >
+				Lucchini Gambit			</a>
+		</h3>
+				</div>
+					</div>
+		</article>
+				</div>
+		
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-577da5ed elementor-align-center elementor-widget elementor-widget-button" data-id="577da5ed" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://www.thechesswebsite.com/articles/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Even More Posts!</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3a565c2b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3a565c2b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-64f3a92c" data-id="64f3a92c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4232fe51 elementor-widget elementor-widget-heading" data-id="4232fe51" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Featured Products</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3f23f5b4 elementor-widget elementor-widget-text-editor" data-id="3f23f5b4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>We&#8217;ve selected the very best training and analysis software in the world.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-7d9e888a elementor-grid-2 elementor-product-loop-item--align-center elementor-grid-mobile-1 remove-h2 elementor-grid-tablet-3 elementor-products-grid elementor-wc-products elementor-widget elementor-widget-woocommerce-products" data-id="7d9e888a" data-element_type="widget" data-widget_type="woocommerce-products.default">
+				<div class="elementor-widget-container">
+			<div class="woocommerce columns-2 "><ul class="products elementor-grid columns-2">
+<li class="product type-product post-7360 status-publish first instock product_cat-t-shirts has-post-thumbnail featured shipping-taxable purchasable product-type-simple">
+	<a href="https://www.thechesswebsite.com/product/t-shirts/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" decoding="async" width="250" height="300" src="https://www.thechesswebsite.com/wp-content/uploads/2016/03/IMG_0638-e1490239168990-250x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="the chess website t-shirt" /><h2 class="woocommerce-loop-product__title">T-Shirts</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>15.00</bdi></span></span>
+</a><a href="?add-to-cart=7360" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="7360" data-product_sku="" aria-label="Add to cart: &ldquo;T-Shirts&rdquo;" aria-describedby="" rel="nofollow">Add to cart</a><span class="gtmkit_product_data" style="display:none;visibility:hidden" data-gtmkit_product_id="7360" data-gtmkit_product_data="{&quot;id&quot;:&quot;7360&quot;,&quot;item_id&quot;:&quot;7360&quot;,&quot;item_name&quot;:&quot;T-Shirts&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;price&quot;:15,&quot;item_category&quot;:&quot;T-Shirts&quot;,&quot;item_list_name&quot;:&quot;General Product List&quot;,&quot;index&quot;:1}"></span></li>
+<li class="product type-product post-4403 status-publish last outofstock product_cat-dvds has-post-thumbnail featured shipping-taxable purchasable product-type-simple">
+	<a href="https://www.thechesswebsite.com/product/chess-dvds/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" decoding="async" width="300" height="300" src="https://www.thechesswebsite.com/wp-content/uploads/2015/08/all-things-chess-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://www.thechesswebsite.com/wp-content/uploads/2015/08/all-things-chess-300x300.jpg 300w, https://www.thechesswebsite.com/wp-content/uploads/2015/08/all-things-chess-100x100.jpg 100w, https://www.thechesswebsite.com/wp-content/uploads/2015/08/all-things-chess-160x160.jpg 160w, https://www.thechesswebsite.com/wp-content/uploads/2015/08/all-things-chess-190x190.jpg 190w, https://www.thechesswebsite.com/wp-content/uploads/2015/08/all-things-chess.jpg 380w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">The Chess Website Chess DVDs</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>50.00</bdi></span></span>
+</a><a href="https://www.thechesswebsite.com/product/chess-dvds/" data-quantity="1" class="button product_type_simple" data-product_id="4403" data-product_sku="" aria-label="Read more about &ldquo;The Chess Website Chess DVDs&rdquo;" aria-describedby="" rel="nofollow">Read more</a><span class="gtmkit_product_data" style="display:none;visibility:hidden" data-gtmkit_product_id="4403" data-gtmkit_product_data="{&quot;id&quot;:&quot;4403&quot;,&quot;item_id&quot;:&quot;4403&quot;,&quot;item_name&quot;:&quot;The Chess Website Chess DVDs&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;price&quot;:50,&quot;item_category&quot;:&quot;DVDs&quot;,&quot;item_list_name&quot;:&quot;General Product List&quot;,&quot;index&quot;:2}"></span></li>
+</ul>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5e3fb96b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5e3fb96b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-22ce1de0" data-id="22ce1de0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-55cd509 elementor-testimonial--layout-image_above elementor-testimonial--skin-default elementor-testimonial--align-center elementor-arrows-yes elementor-widget elementor-widget-testimonial-carousel" data-id="55cd509" data-element_type="widget" data-settings="{&quot;show_arrows&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="testimonial-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-swiper">
+			<div class="elementor-main-swiper swiper">
+				<div class="swiper-wrapper">
+											<div class="swiper-slide">
+									<div class="elementor-testimonial">
+							<div class="elementor-testimonial__content">
+					<div class="elementor-testimonial__text">
+						Your website is the first I've ever subscribed to. Your instructional videos are great and your analysis of famous games is engaging. I got so much out of it that I felt obligated to subscribe.					</div>
+					<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Charles Fairchild</span></cite>				</div>
+						<div class="elementor-testimonial__footer">
+									<div class="elementor-testimonial__image">
+						<img decoding="async" src="https://www.thechesswebsite.com/wp-content/uploads/2012/08/photo1.jpg" alt="Charles Fairchild">
+											</div>
+											</div>
+		</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-testimonial">
+							<div class="elementor-testimonial__content">
+					<div class="elementor-testimonial__text">
+						Really enjoying your website. It has rekindled my interested in chess.					</div>
+					<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Kyle Shevlin</span></cite>				</div>
+						<div class="elementor-testimonial__footer">
+									<div class="elementor-testimonial__image">
+						<img decoding="async" src="https://www.thechesswebsite.com/wp-content/uploads/2012/08/kyleshevlin.jpg" alt="Kyle Shevlin">
+											</div>
+											</div>
+		</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-testimonial">
+							<div class="elementor-testimonial__content">
+					<div class="elementor-testimonial__text">
+						I love your website. I’ve already learned a lot about chess. The videos are easy to follow and understand in addition to giving a few different options for play.					</div>
+					<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Justin Wilcox</span></cite>				</div>
+						<div class="elementor-testimonial__footer">
+									<div class="elementor-testimonial__image">
+						<img decoding="async" src="https://www.thechesswebsite.com/wp-content/uploads/2012/08/JustinWilcox.jpg" alt="Justin Wilcox">
+											</div>
+											</div>
+		</div>
+								</div>
+									</div>
+																				<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-left"></i>							<span class="elementor-screen-only">Previous</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-right"></i>							<span class="elementor-screen-only">Next</span>
+						</div>
+												</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<div class="post-tags">
+					</div>
+			</div>
+
+	
+</main>
+
+			<div data-elementor-type="footer" data-elementor-id="30378" class="elementor elementor-30378 elementor-location-footer">
+					<div class="elementor-section-wrap">
+								<section class="ee-conditions--hidden elementor-section elementor-top-section elementor-element elementor-element-38c4038e elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="38c4038e" data-element_type="section" data-settings="{&quot;ee_display_conditions_enable&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3c2bbb6e" data-id="3c2bbb6e" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-78a0528 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="78a0528" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ee_display_conditions_enable&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3e8b65b" data-id="3e8b65b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1e823a17 elementor-widget elementor-widget-text-editor" data-id="1e823a17" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<h6>Get <strong>UNLIMITED ACCESS</strong> To All Of Our Openings, Strategies, Analysis, Practice Games And More</h6>
+<ul>
+<li>Instant, full access to ALL games, strategies, videos, game analyzer, and more.</li>
+<li>Frequent updates &#8211; new openings, strategies and commentary are always being added.</li>
+<li>The best place to take your chess game to the next level.</li>
+</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-78eaad81 elementor-align-center elementor-widget elementor-widget-button" data-id="78eaad81" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="/start-membership/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Join Now</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3dd328f9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3dd328f9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8ebc70f" data-id="8ebc70f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-251480e7 elementor-nav-menu__align-center elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="251480e7" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+				<ul id="menu-1-251480e7" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1348"><a href="https://www.thechesswebsite.com/contact/" class="elementor-item">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2399"><a href="https://www.thechesswebsite.com/faqs/" class="elementor-item">FAQs</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4363"><a href="https://www.thechesswebsite.com/terms/" class="elementor-item">Terms of Use</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-4364"><a rel="privacy-policy" href="https://www.thechesswebsite.com/privacy-policy/" class="elementor-item">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"><a href="https://www.thechesswebsite.com/updates/" class="elementor-item">Website Updates</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-251480e7" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1348"><a href="https://www.thechesswebsite.com/contact/" class="elementor-item" tabindex="-1">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2399"><a href="https://www.thechesswebsite.com/faqs/" class="elementor-item" tabindex="-1">FAQs</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4363"><a href="https://www.thechesswebsite.com/terms/" class="elementor-item" tabindex="-1">Terms of Use</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-4364"><a rel="privacy-policy" href="https://www.thechesswebsite.com/privacy-policy/" class="elementor-item" tabindex="-1">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"><a href="https://www.thechesswebsite.com/updates/" class="elementor-item" tabindex="-1">Website Updates</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-30c1d58 e-grid-align-mobile-center elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="30c1d58" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-3562b2c" href="https://twitter.com/thechesswebsite" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<i class="fab fa-twitter"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-e57b50e" href="https://www.youtube.com/user/thechesswebsite" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-60895e8e elementor-widget elementor-widget-text-editor" data-id="60895e8e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Copyright 2024. TheChessWebsite.com						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+							</div>
+				</div>
+		
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8360456-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-8360456-1');
+    </script>
+	<script>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='wc-blocks-style-css' href='https://www.thechesswebsite.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-8.9.3' media='all' />
+<link rel='stylesheet' id='elementor-select2-css' href='https://www.thechesswebsite.com/wp-content/plugins/elementor/assets/lib/e-select2/css/e-select2.min.css?ver=4.0.6-rc.1' media='all' />
+<script src="https://www.thechesswebsite.com/wp-content/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.min.js?ver=1.0.9-wc.8.9.3" id="selectWoo-js" data-wp-strategy="defer"></script>
+<script id="wc-memberships-blocks-common-js-extra">
+var wc_memberships_blocks_common = {"keywords":{"email":"Email","phone":"Phone","plan":"Plan","address":"Address","search_not_found":"We didn\u2019t find any members. Please try a different search or check for typos.","results_not_found":"No records found..."},"ajaxUrl":"https:\/\/www.thechesswebsite.com\/wp-admin\/admin-ajax.php","restUrl":"https:\/\/www.thechesswebsite.com\/wp-json\/","restNonce":"8b5f8e0953"};
+</script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/woocommerce-memberships/assets/js/frontend/wc-memberships-blocks-common.min.js?ver=1.24.0" id="wc-memberships-blocks-common-js"></script>
+<script id="qppr_frontend_scripts-js-extra">
+var qpprFrontData = {"linkData":[],"siteURL":"https:\/\/www.thechesswebsite.com","siteURLq":"https:\/\/www.thechesswebsite.com"};
+</script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/quick-pagepost-redirect-plugin/js/qppr_frontend_script.min.js?ver=5.2.3" id="qppr_frontend_scripts-js"></script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=8.9.3" id="sourcebuster-js-js"></script>
+<script id="wc-order-attribution-js-extra">
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"ajaxurl":"https:\/\/www.thechesswebsite.com\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+</script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=8.9.3" id="wc-order-attribution-js"></script>
+<script src="https://www.thechesswebsite.com/wp-content/themes/thechesswebsite/js/custom.js?ver=200423-13928" id="custom-js-js"></script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1" id="smartmenus-js"></script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/elementor/assets/lib/e-select2/js/e-select2.full.min.js?ver=4.0.6-rc.1" id="jquery-elementor-select2-js"></script>
+<script src="https://www.thechesswebsite.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.13.2" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.21.7" id="elementor-webpack-runtime-js"></script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.21.7" id="elementor-frontend-modules-js"></script>
+<script src="https://www.thechesswebsite.com/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script src="https://www.thechesswebsite.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/www.thechesswebsite.com\/wp-admin\/admin-ajax.php","nonce":"fb00be0b58","urls":{"assets":"https:\/\/www.thechesswebsite.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/www.thechesswebsite.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"woocommerce":{"menu_cart":{"cart_page_url":"https:\/\/www.thechesswebsite.com\/cart\/","checkout_page_url":"https:\/\/www.thechesswebsite.com\/checkout\/","fragments_nonce":"040ec47f0c"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/www.thechesswebsite.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.13.2" id="elementor-pro-frontend-js"></script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script src="https://www.thechesswebsite.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.21.7","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"additional_custom_breakpoints":true,"e_swiper_latest":true,"container_grid":true,"theme_builder_v2":true,"home_screen":true,"ai-layout":true,"landing-pages":true,"page-transitions":true,"notes":true,"loop":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/www.thechesswebsite.com\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","woocommerce_notices_elements":[]},"post":{"id":1410,"title":"Home%20-%20The%20Chess%20Website","excerpt":"","featuredImage":false}};
+</script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.21.7" id="elementor-frontend-js"></script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.13.2" id="pro-elements-handlers-js"></script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.13.2" id="e-sticky-js"></script>
+<script src="https://www.thechesswebsite.com/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
+<script id="wp-util-js-extra">
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src="https://www.thechesswebsite.com/wp-includes/js/wp-util.min.js?ver=6.6.2" id="wp-util-js"></script>
+<script id="wpforms-elementor-js-extra">
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+</script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.8.8.3" id="wpforms-elementor-js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" id="gsap-js-js"></script>
+<script id="elementor-extras-frontend-js-extra">
+var elementorExtrasFrontendConfig = {"urls":{"assets":"https:\/\/www.thechesswebsite.com\/wp-content\/plugins\/elementor-extras\/assets\/"},"refreshableWidgets":["ee-offcanvas.classic","ee-popup.classic","gallery-slider.default","media-carousel.default","image-carousel.default","slides.default"]};
+</script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/elementor-extras/assets/js/frontend.min.js?ver=2.2.51" id="elementor-extras-frontend-js"></script>
+<script src="https://www.thechesswebsite.com/wp-content/plugins/elementor-extras/assets/lib/parallax-gallery/parallax-gallery.min.js?ver=1.0.0" id="parallax-gallery-js"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-addcf77b519c1d220a8","applicationID":"1034800284","transactionName":"ZVxWMEBTVhBRVkxdWlwWdQdGW1cNH1xWUFBK","queueTime":0,"applicationTime":4430,"atts":"SRtVRghJRR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
